@@ -5,17 +5,11 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
+
+// Root Route
 $routes->get('/', function () {
     if (session()->get('isLoggedIn')) {
-        $role = session()->get('role');
-        
-        if ($role === 'admin') {
-            return redirect()->to('/admin/dashboard');
-        } elseif ($role === 'mitra') {
-            return redirect()->to('/mitra/dashboard');
-        } else {
-            return redirect()->to('/user/dashboard');
-        }
+        return redirect()->to('/dashboard');
     }
     return redirect()->to('/auth/login');
 });
@@ -29,9 +23,11 @@ $routes->group('auth', ['namespace' => 'App\Modules\Auth\Controllers'], function
     $routes->get('logout', 'Auth::logout');
 });
 
-$routes->group('admin', ['namespace' => 'App\Modules\Admin\Controllers'], function ($routes) {
-    $routes->get('dashboard', 'Dashboard::index');
-});
+// Dashboard Umum
+$routes->get(
+    'dashboard',
+    '\App\Modules\Dashboard\Controllers\Dashboard::index'
+);
 
-// Home Route
-$routes->get('/', 'App\Controllers\Home::index');
+// Optional temporary route
+$routes->get('home', 'App\Controllers\Home::index');

@@ -98,31 +98,42 @@ class Auth extends BaseController
     }
 
     // Proses Register
+       // Proses Register
     public function attemptRegister()
     {
         $rules = [
-            'nama'     => 'required|min_length[3]',
+            'nama'     => 'required|min_length[3]|max_length[100]',
             'email'    => 'required|valid_email|is_unique[users.email]',
-            'password' => 'required|min_length[6]',
+            'password' => 'required|min_length[8]|max_length[255]',
             'role'     => 'required|in_list[user,mitra]'
         ];
 
-        if (!$this->validate($rules)) {
+        $messages = [
+            'password' => [
+                'min_length' => 'Password harus minimal 8 karakter'
+            ],
+            'email' => [
+                'is_unique' => 'Email sudah terdaftar'
+            ]
+        ];
+
+        if (!$this->validate($rules, $messages)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
         $data = [
-            'nama'     => $this->request->getPost('nama'),
-            'email'    => $this->request->getPost('email'),
-            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-            'role'     => $this->request->getPost('role'),
+            'nama'       => $this->request->getPost('nama'),
+            'email'      => $this->request->getPost('email'),
+            'password'   => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'role'       => $this->request->getPost('role'),
             'created_at' => date('Y-m-d H:i:s')
         ];
 
         if ($this->authModel->insert($data)) {
-            return redirect()->to('/auth/login')->with('success', 'Registrasi berhasil! Silakan login.');
+            return redirect()->to('/auth/login')
+                             ->with('success', 'Registrasi berhasil! Silakan login.');
         }
 
-        return redirect()->back()->withInput()->with('error', 'Gagal mendaftar. Coba lagi.');
+        return redirect()->back()->withInput()->with('error', 'Gagal mendaftar. Silakan coba lagi.');
     }
 }
