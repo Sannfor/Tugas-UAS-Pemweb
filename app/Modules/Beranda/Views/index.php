@@ -54,20 +54,20 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
+           <li><a href="#tentangkami">Tentang Kami</a></li>
           <li><a href="#produk">Katalog</a></li>
-          <li><a href="#berita">Berita</a></li>
           <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#team">Tentang Kami</a></li>
+          <li><a href="#berita">Berita</a></li>
           <li><a href="#kontak">Kontak</a></li>
           <li><a href="#laporan">Laporan</a></li>
-          <li><a href="#profil">Profil</a></li>
+          <li><a href="<?= base_url('profil') ?>">Profil</a></li>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted logout-btn" href="<?= base_url('auth/logout') ?>"> Logout </a>
-
+      
+     
 
 
     </div>
@@ -83,13 +83,26 @@
       <div class="container">
         <div class="row gy-4 d-flex justify-content-between">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-            <h2 data-aos="fade-up">Your Lightning Fast Delivery Partner</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Facere distinctio molestiae nisi fugit tenetur repellat non praesentium nesciunt optio quis sit odio nemo quisquam. eius quos reiciendis eum vel eum voluptatem eum maiores eaque id optio ullam occaecati odio est possimus vel reprehenderit</p>
+            <h2 data-aos="fade-up">Solusi Terpercaya untuk Jual Beli Kapal</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Temukan berbagai jenis kapal berkualitas dan terhubung langsung dengan penjual terpercaya melalui platform DryDock</p>
 
-            <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-              <input type="text" class="form-control" placeholder="Your ZIP code or City. e.g. New York">
-              <button type="submit" class="btn btn-primary">Search</button>
-            </form>
+            <div class="d-flex flex-wrap justify-content-center gap-5"
+                data-aos="fade-up"
+                data-aos-delay="200">
+
+                <a href="<?= base_url('produk/tanker') ?>" class="btn btn-primary ship-btn shadow-sm">
+                    🚢 Tanker
+                </a>
+
+                <a href="<?= base_url('produk/tugboat') ?>" class="btn btn-primary ship-btn shadow-sm">
+                    ⚓ Tugboat
+                </a>
+
+                <a href="<?= base_url('produk/ferry') ?>" class="btn btn-primary ship-btn shadow-sm">
+                    🛳️ Ferry
+                </a>
+
+            </div>
 
             <div class="row gy-4" data-aos="fade-up" data-aos-delay="300">
 
