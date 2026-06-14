@@ -209,10 +209,12 @@ class Auth extends BaseController
 
     private function redirectByRole()
     {
-        if (session()->get('role') === 'admin') {
-            return '/admin/dashboard';
-        }
-
-        return '/dashboard';
+    if (session()->get('role') === 'admin') {
+    return '/admin/dashboard';
     }
+
+    return '/';
+
+    }
+
 }
