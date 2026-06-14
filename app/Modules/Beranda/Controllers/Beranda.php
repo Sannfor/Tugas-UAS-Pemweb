@@ -11,10 +11,12 @@ class Beranda extends BaseController
     {
         $bulkCarrierModel = new BulkCarrierModel();
         
-        // Masukkan data spesifik halaman ini ke wadah global $this->data
-        $this->data['kapal_bulk'] = $bulkCarrierModel->where('status', 'available')->findAll();
+        // Gunakan variabel array lokal biasa, BUKAN $this->data
+        $data = [
+            'kapal_bulk' => $bulkCarrierModel->where('status', 'available')->findAll()
+        ];
 
-        // Kirim $this->data ke view
-        return view('App\Modules\Beranda\Views\index', $this->data);
+        // Kirim $data ke view
+        return view('App\Modules\Beranda\Views\index', $data);
     }
 }
