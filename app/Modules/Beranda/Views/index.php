@@ -45,6 +45,28 @@
 
 <body class="index-page">
 
+  <style>
+    /* 1. Mengurangi jarak atas-bawah pada navbar agar tetap ramping */
+    .header {
+      padding: 5px 0 !important;
+      /* Dipersempit lagi jarak atas-bawahnya */
+    }
+
+    /* 2. Membesarkan ukuran logo */
+    .header .logo img {
+      max-height: 100px !important;
+      /* Naikkan drastis dari 50px ke 85px (Bisa diubah 70-100 sesuai selera) */
+      width: auto !important;
+      /* Menjaga logo tidak gepeng */
+    }
+
+    /* 3. (Opsional) Jika ada teks sistem di sebelah logo, sembunyikan atau sesuaikan */
+    .header .logo .sitename {
+      display: none;
+      /* Tambahkan ini jika di dalam gambar logomu sudah ada tulisan DRYDOCK-nya */
+    }
+  </style>
+  
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="<?= base_url() ?>" class="logo d-flex align-items-center me-auto">
@@ -55,11 +77,19 @@
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
           <li><a href="#tentangkami">Tentang Kami</a></li>
-          <li><a href="#produk">Katalog</a></li>
           <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#berita">Berita</a></li>
+          <li><a href="#produk">Katalog</a></li>
+
+          <!-- Dropdown Menu Informasi -->
+          <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#berita">Berita</a></li>
+              <li><a href="#laporan">Laporan</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </li>
+
           <li><a href="#kontak">Kontak</a></li>
-          <li><a href="#laporan">Laporan</a></li>
           <li><a href="<?= base_url('profil') ?>">Profil</a></li>
 
         </ul>
@@ -298,14 +328,14 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-
         <div class="row gy-4">
 
           <!-- Layanan 1: Katalog & Marketplace -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-1.jpg') ?>" alt="Katalog Armada" class="img-fluid">
+                <!-- Tambahan style tinggi tetap dan object-fit -->
+                <img src="<?= base_url('assets/images/layanan/marketplace-armada.jpg') ?>" alt="Katalog Armada" class="img-fluid" style="width: 100%; height: 250px; object-fit: cover;">
               </div>
               <div class="card-body p-4 text-center">
                 <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Marketplace Armada</a></h3>
@@ -318,7 +348,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-2.jpg') ?>" alt="Sistem Negosiasi" class="img-fluid">
+                <!-- Tambahan style tinggi tetap dan object-fit -->
+                <img src="<?= base_url('assets/images/layanan/sistem-negosiasi.jpg') ?>" alt="Sistem Negosiasi" class="img-fluid" style="width: 100%; height: 250px; object-fit: cover;">
               </div>
               <div class="card-body p-4 text-center">
                 <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Sistem Negosiasi</a></h3>
@@ -331,7 +362,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-3.jpg') ?>" alt="Inspeksi Kapal" class="img-fluid">
+                <!-- Tambahan style tinggi tetap dan object-fit -->
+                <img src="<?= base_url('assets/images/layanan/inspeksi-teknis.jpg') ?>" alt="Inspeksi Kapal" class="img-fluid" style="width: 100%; height: 250px; object-fit: cover;">
               </div>
               <div class="card-body p-4 text-center">
                 <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Inspeksi Teknis</a></h3>
@@ -344,7 +376,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-4.jpg') ?>" alt="Pengurusan Dokumen Legal" class="img-fluid">
+                <!-- Tambahan style tinggi tetap dan object-fit -->
+                <img src="<?= base_url('assets/images/layanan/legal-dokumen.jpg') ?>" alt="Pengurusan Dokumen Legal" class="img-fluid" style="width: 100%; height: 250px; object-fit: cover;">
               </div>
               <div class="card-body p-4 text-center">
                 <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Legal & Dokumen</a></h3>
@@ -357,7 +390,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-5.jpg') ?>" alt="Pengiriman Kapal" class="img-fluid">
+                <!-- Tambahan style tinggi tetap dan object-fit -->
+                <img src="<?= base_url('assets/images/layanan/ship-delivery.jpg') ?>" alt="Pengiriman Kapal" class="img-fluid" style="width: 100%; height: 250px; object-fit: cover;">
               </div>
               <div class="card-body p-4 text-center">
                 <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Ship Delivery</a></h3>
@@ -370,7 +404,8 @@
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-6.jpg') ?>" alt="Pembiayaan Maritim" class="img-fluid">
+                <!-- Tambahan style tinggi tetap dan object-fit -->
+                <img src="<?= base_url('assets/images/layanan/pembiyayaan.jpg') ?>" alt="Pembiayaan Maritim" class="img-fluid" style="width: 100%; height: 250px; object-fit: cover;">
               </div>
               <div class="card-body p-4 text-center">
                 <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Pembiayaan (Financing)</a></h3>
@@ -380,7 +415,6 @@
           </div><!-- End Card Item -->
 
         </div>
-
       </div>
 
     </section><!-- /Services Section -->
@@ -411,11 +445,12 @@
         <h2>Fitur Platform</h2>
         <p>Teknologi yang dirancang untuk memudahkan setiap tahap transaksi maritim Anda</p>
       </div>
+
       <div class="container">
 
         <div class="row gy-4 align-items-center features-item mb-5">
           <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <img src="<?= base_url('assets/logis/img/features-1.jpg') ?>" class="img-fluid rounded shadow" alt="Advanced Filter">
+            <img src="<?= base_url('assets/images/layanan/penyaringan-spesifik.jpg') ?>" class="img-fluid shadow" alt="Advanced Filter" style="width: 100%; height: 350px; object-fit: cover; border-radius: 12px;">
           </div>
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
             <h3 class="fw-bold">Penyaringan Spesifikasi Tingkat Lanjut</h3>
@@ -429,9 +464,10 @@
             </ul>
           </div>
         </div>
+
         <div class="row gy-4 align-items-center features-item mb-5">
           <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="<?= base_url('assets/logis/img/features-2.jpg') ?>" class="img-fluid rounded shadow" alt="Price Trends">
+            <img src="<?= base_url('assets/images/layanan/analisis-trend.jpg') ?>" class="img-fluid shadow" alt="Price Trends" style="width: 100%; height: 350px; object-fit: cover; border-radius: 12px;">
           </div>
           <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
             <h3 class="fw-bold">Analitik Tren Harga Pasar</h3>
@@ -443,9 +479,10 @@
             </p>
           </div>
         </div>
+
         <div class="row gy-4 align-items-center features-item mb-5">
           <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-            <img src="<?= base_url('assets/logis/img/features-3.jpg') ?>" class="img-fluid rounded shadow" alt="Virtual Negotiation">
+            <img src="<?= base_url('assets/images/layanan/negosiasi-virtual.jpg') ?>" class="img-fluid shadow" alt="Virtual Negotiation" style="width: 100%; height: 350px; object-fit: cover; border-radius: 12px;">
           </div>
           <div class="col-md-7" data-aos="fade-up">
             <h3 class="fw-bold">Ruang Negosiasi Virtual (Bidding Room)</h3>
@@ -457,9 +494,10 @@
             </ul>
           </div>
         </div>
+
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-            <img src="<?= base_url('assets/logis/img/features-4.jpg') ?>" class="img-fluid rounded shadow" alt="Verified Publisher">
+            <img src="<?= base_url('assets/images/layanan/verifikasi.jpg') ?>" class="img-fluid shadow" alt="Verified Publisher" style="width: 100%; height: 350px; object-fit: cover; border-radius: 12px;">
           </div>
           <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
             <h3 class="fw-bold">Sistem Verifikasi Publisher & Broker</h3>
@@ -471,6 +509,7 @@
             </p>
           </div>
         </div>
+
       </div>
 
     </section>
@@ -479,10 +518,11 @@
     <?= view('App\Modules\Katalog\Views\katalog_section', ['kapal_bulk' => $kapal_bulk]) ?>
     <!-- End Katalog Section -->
 
-    <!-- Testimonials Section -->
+    <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section dark-background">
 
-      <img src="<?= base_url('assets/logis/img/testimonials-bg.jpg') ?>" class="testimonials-bg" alt="Testimonials">
+      <!-- Pastikan path background ini sesuai dengan foldermu -->
+      <img src="<?= base_url('assets/logis/img/testimonials-bg.jpg') ?>" class="testimonials-bg" alt="Testimonials Background">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -504,81 +544,86 @@
           </script>
           <div class="swiper-wrapper">
 
+            <!-- Testimonial 1 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
+                <h3>Budi Santoso</h3>
+                <h4>CEO PT. Maritim Nusantara</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <span>Drydock sangat membantu perusahaan kami dalam mengekspansi armada. Fitur <i>bidding</i> langsung dengan pemilik kapal membuat kami mendapatkan harga Bulk Carrier yang sangat kompetitif tanpa perantara yang berbelit.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
+            <!-- Testimonial 2 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <h3>Sarah Wijaya</h3>
+                <h4>Direktur Operasional (Ferry Line)</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <span>Sebagai penyedia layanan kapal penumpang, keamanan adalah nomor satu. Data spesifikasi yang transparan dan layanan inspeksi dari Drydock memberi kami rasa aman yang luar biasa sebelum melakukan transaksi jutaan dolar.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
+            <!-- Testimonial 3 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <h3>Capt. Andi Pratama</h3>
+                <h4>Fleet Manager</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                  <span>Sangat efisien! Kami mendaftarkan 3 unit Tugboat lama kami di platform ini dan berhasil terjual dalam waktu kurang dari dua bulan. Proses verifikasi publisher-nya juga membuat semuanya terasa sangat profesional.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
+            <!-- Testimonial 4 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <h3>David Chen</h3>
+                <h4>Maritime Broker (Singapore)</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                  <span>Jangkauan pasar global Drydock tidak main-main. Saya berhasil menghubungkan klien saya di Eropa dengan galangan kapal di Asia Tenggara dengan sangat mudah melalui dasbor ruang negosiasi virtual mereka.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
             </div><!-- End testimonial item -->
 
+            <!-- Testimonial 5 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <h3>Michael R.</h3>
+                <h4>Investor Maritim</h4>
                 <div class="stars">
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
                   <i class="bi bi-quote quote-icon-left"></i>
-                  <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                  <span>Selain menyediakan katalog yang luar biasa, tim Legal Drydock sangat membantu dalam pengurusan dokumen pergantian bendera (flagging). Ini benar-benar layanan hulu ke hilir (<i>end-to-end</i>) yang sempurna.</span>
                   <i class="bi bi-quote quote-icon-right"></i>
                 </p>
               </div>
@@ -592,14 +637,14 @@
 
     </section><!-- /Testimonials Section -->
 
-    <!-- Faq Section -->
+    <!-- ======= Faq Section ======= -->
     <section id="faq" class="faq section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Frequently Asked Questions</span>
-        <h2>Frequently Asked Questions</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <span>Pertanyaan Umum (FAQ)</span>
+        <h2>Pertanyaan Umum (FAQ)</h2>
+        <p>Temukan jawaban untuk pertanyaan yang paling sering diajukan seputar layanan Drydock</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -610,47 +655,52 @@
 
             <div class="faq-container">
 
+              <!-- FAQ 1 -->
               <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3>Bagaimana cara kerja sistem tawar-menawar (bidding) di Drydock?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>Setelah Anda mendaftar dan memverifikasi akun, Anda dapat masuk ke Ruang Negosiasi Virtual pada halaman detail kapal. Anda bisa langsung mengajukan nominal penawaran harga kepada pemilik kapal. Jika pemilik setuju, sistem akan merekam kesepakatan tersebut untuk dilanjutkan ke tahap inspeksi dan legalisasi kontrak.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
+              <!-- FAQ 2 -->
               <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <h3>Apakah kapal yang dijual di katalog sudah melalui proses verifikasi?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Ya, tim surveyor independen kami melakukan peninjauan awal terhadap dokumen kelas dan riwayat operasional kapal sebelum diizinkan tampil di katalog. Namun, pembeli tetap sangat disarankan untuk menggunakan layanan "Inspeksi Teknis" kami sebelum melakukan pembayaran final.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
+              <!-- FAQ 3 -->
               <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <h3>Siapa saja yang bisa mendaftarkan (menjual) kapalnya di platform ini?</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>Pemilik langsung (Owner), perusahaan pelayaran, maupun agen broker maritim resmi dapat menjual kapal mereka di Drydock. Setiap pengunggah (publisher) wajib melewati tahap otentikasi KYC (Know Your Customer) untuk menjamin keamanan transaksi dan menghindari penipuan.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
+              <!-- FAQ 4 -->
               <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <h3>Apakah Drydock membantu pengurusan dokumen kepemilikan dan asuransi?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Tentu. Kami memiliki layanan "Legal & Dokumen" yang terintegrasi. Tim ahli kami akan memfasilitasi proses pergantian kepemilikan (Bill of Sale), balik nama, pergantian bendera kapal (Flagging), hingga menghubungkan Anda dengan penyedia asuransi laut (Marine Insurance) terpercaya.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
 
+              <!-- FAQ 5 -->
               <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h3>
+                <h3>Berapa lama estimasi pengiriman kapal (Ship Delivery) ke negara tujuan?</h3>
                 <div class="faq-content">
-                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                  <p>Estimasi pengiriman sangat bergantung pada jarak lokasi pelabuhan asal kapal dengan pelabuhan tujuan Anda, serta kondisi cuaca. Namun, melalui layanan "Ship Delivery" kami, kami akan menyediakan kru berpengalaman yang menjamin kapal tiba seefisien mungkin sambil terus memperbarui kordinat pelayarannya kepada Anda.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
               </div><!-- End Faq item-->
@@ -664,72 +714,75 @@
       </div>
 
     </section><!-- /Faq Section -->
-
   </main>
 
+  <!-- ======= Footer ======= -->
   <footer id="footer" class="footer dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
+
+        <!-- Kolom 1: Tentang Aplikasi -->
         <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="#hero" class="logo d-flex align-items-center">
             <span class="sitename">Drydock</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Drydock adalah platform <i>marketplace</i> penyedia layanan jual-beli kapal maritim terpercaya. Kami menghubungkan pemilik armada, agen, dan pembeli potensial dari seluruh dunia dengan proses transaksi yang aman, transparan, dan efisien.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
+        <!-- Kolom 2: Tautan Menu Navbar (Sudah Disesuaikan dengan ID terbaru) -->
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Tautan Berguna</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#tentangkami">Tentang Kami</a></li>
+            <li><a href="#produk">Katalog</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#laporan">Laporan</a></li>
+            <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
 
+        <!-- Kolom 3: Daftar Layanan -->
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Layanan Kami</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#layanan">Marketplace Armada</a></li>
+            <li><a href="#layanan">Sistem Negosiasi</a></li>
+            <li><a href="#layanan">Inspeksi Teknis</a></li>
+            <li><a href="#layanan">Legal & Dokumen</a></li>
+            <li><a href="#layanan">Ship Delivery</a></li>
           </ul>
         </div>
 
+        <!-- Kolom 4: Kontak -->
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <h4>Hubungi Kami</h4>
+          <p>Gedung Maritim Tower, Lt. 12</p>
+          <p>Jl. Pelabuhan Utama No. 1, Tanjung Priok</p>
+          <p>Jakarta Utara, 14310, Indonesia</p>
+          <p class="mt-4"><strong>Telepon:</strong> <span>+62 811 2345 6789</span></p>
+          <p><strong>Email:</strong> <span>info@drydock.id</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Drydock</strong> <span>All Rights Reserved</span></p>
+      <p>&copy; <span>Copyright</span> <strong class="px-1 sitename">Drydock</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+        <!-- Sesuai lisensi dan kredit ke tim kamu -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | Developed by <strong>Tim Pengembang Drydock</strong>
       </div>
     </div>
 
-  </footer>
+  </footer><!-- End Footer -->
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
