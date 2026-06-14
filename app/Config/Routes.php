@@ -49,5 +49,7 @@ $routes->get('katalog/hapus/(:num)', '\App\Modules\Katalog\Controllers\Katalog::
 $routes->get('kapal/detail/(:num)', '\App\Modules\Katalog\Controllers\Katalog::detail/$1');
 $routes->post('kapal/tawar', '\App\Modules\Katalog\Controllers\Katalog::kirim_tawaran');
 
+$routes->get('profil', '\App\Modules\Profil\Controllers\Profil::index');
+
 // Optional temporary route (Ditarik dari GitHub)
 $routes->get('home', 'App\Controllers\Home::index');

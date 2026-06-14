@@ -64,8 +64,7 @@
                             <?php endif; ?>
 
                             <form action="<?= base_url('auth/attemptLogin') ?>" method="post">
-
-                                <?= csrf_field() ?>
+                               <?= csrf_field() ?>
 
                                 <div class="mb-3">
 

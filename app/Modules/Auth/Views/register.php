@@ -70,8 +70,7 @@
                             <?php endif; ?>
 
                             <form action="<?= base_url('auth/attemptRegister') ?>" method="post">
-
-                                <?= csrf_field() ?>
+                               <?= csrf_field() ?>
 
                                 <div class="mb-3">
                                     <label class="form-label">
