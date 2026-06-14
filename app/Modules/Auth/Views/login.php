@@ -122,6 +122,12 @@
                                     Login
 
                                 </button>
+                                
+                                <div class="text-center mt-3">
+                                    <a href="<?= base_url('auth/forgot-password') ?>">
+                                        Forgot Password?
+                                    </a>
+                                </div>
 
                                 <div class="text-center mt-4">
 
