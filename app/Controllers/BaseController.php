@@ -30,16 +30,18 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
+    protected $data = [];
+
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
-        // Load here all helpers you want to be available in your controllers that extend BaseController.
-        // Caution: Do not put the this below the parent::initController() call below.
-        // $this->helpers = ['form', 'url'];
-
-        // Caution: Do not edit this line.
         parent::initController($request, $response, $logger);
 
-        // Preload any models, libraries, etc, here.
-        // $this->session = service('session');
+        // 2. Deklarasikan variabel global kamu di sini
+        // Variabel ini akan aman dan bisa diakses di semua halaman
+        $this->data['title'] = 'Drydock - Jual Beli Kapal'; // Mencegah error $title
+        
+        // Memastikan session sudah aktif secara global
+        $session = \Config\Services::session();
+        $this->data['user_aktif'] = $session->get('user_data'); // Mencegah error hak akses
     }
 }
