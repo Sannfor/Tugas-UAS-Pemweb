@@ -47,7 +47,7 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="<?= base_url() ?>" class="logo d-flex align-items-center me-auto">
-        <img src="<?= base_url('assets/images/drydock-logo-2.png') ?>" alt="Drydock Logo" style="max-height: 100px;">
+        <img src="<?= base_url('assets/images/drydock-logo-2w.png') ?>" alt="Drydock Logo" style="max-height: 140px;">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -56,13 +56,17 @@
           <li><a href="#produk">Katalog</a></li>
           <li><a href="#berita">Berita</a></li>
           <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#tentangkami">Tentang Kami</a></li>
+          <li><a href="#kontak">Kontak</a></li>
           <li><a href="#laporan">Laporan</a></li>
+          <li><a href="#profil">Profil</a></li>
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
       <a class="btn-getstarted logout-btn" href="<?= base_url('auth/logout') ?>"> Logout </a>
-      <a class="btn-getstarted" href="<?= base_url('auth/login') ?>">Login / Dashboard</a>
+     
 
 
     </div>

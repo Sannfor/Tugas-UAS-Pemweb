@@ -222,11 +222,8 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(255, 255, 255, 0);
-  --heading-color: #ffffff;
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(8px);
   transition: all 0.5s;
   z-index: 997;
 }
@@ -236,8 +233,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  margin-right: auto;
 }
 
 .header .logo h1 {
@@ -256,6 +252,18 @@ h6 {
   margin: 0 0 0 30px;
   border-radius: 4px;
   transition: 0.3s;
+}
+
+.logout-btn{
+    background: #dc3545 !important;
+    color: #fff !important;
+    border: 1px solid #dc3545 !important;
+}
+
+.logout-btn:hover{
+    background: #bb2d3b !important;
+    border-color: #bb2d3b !important;
+    color: #fff !important;
 }
 
 .header .btn-getstarted:hover,
@@ -288,7 +296,8 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(14, 29, 52, 0.9);
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(8px);
 }
 
 /*--------------------------------------------------------------
@@ -872,7 +881,7 @@ section,
   width: 100%;
   min-height: 50vh;
   position: relative;
-  padding: 120px 0 60px 0;
+  padding: 200px 0 60px 0;
 }
 
 .hero .hero-bg {
