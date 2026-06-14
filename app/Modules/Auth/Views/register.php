@@ -133,10 +133,7 @@
                                             Buyer
                                         </option>
 
-                                        <option value="mitra"
-                                            <?= old('role') == 'mitra' ? 'selected' : '' ?>>
-                                            Supplier / Partner
-                                        </option>
+                                       
 
                                     </select>
                                 </div>
