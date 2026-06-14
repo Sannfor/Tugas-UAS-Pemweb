@@ -2050,6 +2050,41 @@ section,
     color:#fff;
 }
 
+.category-card{
+    display:block;
+    background:#fff;
+    border-radius:20px;
+    padding:35px 25px;
+    text-align:center;
+    color:#0a2c7d;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
+    border:2px solid transparent;
+    height:100%;
+}
+
+.category-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    border-color:#0a2c7d;
+    color:#0a2c7d;
+}
+
+.category-card .icon{
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.category-card h4{
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.category-card p{
+    margin:0;
+    color:#6c757d;
+    font-size:14px;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
