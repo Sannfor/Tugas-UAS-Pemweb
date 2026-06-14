@@ -54,7 +54,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Beranda</a></li>
-           <li><a href="#tentangkami">Tentang Kami</a></li>
+          <li><a href="#tentangkami">Tentang Kami</a></li>
           <li><a href="#produk">Katalog</a></li>
           <li><a href="#layanan">Layanan</a></li>
           <li><a href="#berita">Berita</a></li>
@@ -66,8 +66,8 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      
-     
+
+
 
 
     </div>
@@ -87,20 +87,20 @@
             <p data-aos="fade-up" data-aos-delay="100">Temukan berbagai jenis kapal berkualitas dan terhubung langsung dengan penjual terpercaya melalui platform DryDock</p>
 
             <div class="d-flex flex-wrap justify-content-center gap-5"
-                data-aos="fade-up"
-                data-aos-delay="200">
+              data-aos="fade-up"
+              data-aos-delay="200">
 
-                <a href="<?= base_url('produk/tanker') ?>" class="btn btn-primary ship-btn shadow-sm">
-                    🚢 Tanker
-                </a>
+              <a href="<?= base_url('produk/tanker') ?>" class="btn btn-primary ship-btn shadow-sm">
+                🚢 Tanker
+              </a>
 
-                <a href="<?= base_url('produk/tugboat') ?>" class="btn btn-primary ship-btn shadow-sm">
-                    ⚓ Tugboat
-                </a>
+              <a href="<?= base_url('produk/tugboat') ?>" class="btn btn-primary ship-btn shadow-sm">
+                ⚓ Tugboat
+              </a>
 
-                <a href="<?= base_url('produk/ferry') ?>" class="btn btn-primary ship-btn shadow-sm">
-                    🛳️ Ferry
-                </a>
+              <a href="<?= base_url('produk/ferry') ?>" class="btn btn-primary ship-btn shadow-sm">
+                🛳️ Ferry
+              </a>
 
             </div>
 
@@ -189,7 +189,7 @@
     </section><!-- /Featured Services Section -->
 
     <!-- Tentang Section -->
-    <section id="team" class="team section-bg" style="padding: 60px 0;">
+    <section id="tentangkami" class="team section-bg" style="padding: 60px 0;">
 
       <div class="container section-title" data-aos="fade-up">
         <span>Tentang Kami</span>
@@ -287,77 +287,95 @@
     </section>
     <!-- End Tentang Section -->
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <!-- ======= Services Section ======= -->
+    <section id="layanan" class="services section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Our Services<br></span>
-        <h2>Our ServiceS</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <span>Layanan Kami<br></span>
+        <h2>Layanan Kami</h2>
+        <p>Dukungan layanan terpadu untuk kelancaran transaksi dan operasional maritim Anda</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4">
 
+          <!-- Layanan 1: Katalog & Marketplace -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card">
+            <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-1.jpg') ?> " alt="" class="img-fluid">
+                <img src="<?= base_url('assets/logis/img/service-1.jpg') ?>" alt="Katalog Armada" class="img-fluid">
               </div>
-              <h3>Storage</h3>
-              <p>Cumque eos in qui numquam. Aut aspernatur perferendis sed atque quia voluptas quisquam repellendus temporibus itaqueofficiis odit</p>
+              <div class="card-body p-4 text-center">
+                <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Marketplace Armada</a></h3>
+                <p class="text-muted mb-0">Platform terpercaya untuk eksplorasi dan transaksi jual beli kapal (Bulk Carrier, Tugboat, Passenger) dengan data spesifikasi yang sangat rinci.</p>
+              </div>
             </div>
           </div><!-- End Card Item -->
 
+          <!-- Layanan 2: Bidding / Negosiasi -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card">
+            <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-2.jpg') ?>" alt="" class="img-fluid">
+                <img src="<?= base_url('assets/logis/img/service-2.jpg') ?>" alt="Sistem Negosiasi" class="img-fluid">
               </div>
-              <h3><a href="#" class="stretched-link">Logistics</a></h3>
-              <p>Asperiores provident dolor accusamus pariatur dolore nam id audantium ut et iure incidunt molestiae dolor ipsam ducimus occaecati nisi</p>
+              <div class="card-body p-4 text-center">
+                <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Sistem Negosiasi</a></h3>
+                <p class="text-muted mb-0">Fitur <i>bidding</i> interaktif yang memungkinkan pembeli melakukan tawar-menawar harga secara aman dan real-time langsung dengan pemilik kapal.</p>
+              </div>
             </div>
           </div><!-- End Card Item -->
 
+          <!-- Layanan 3: Inspeksi -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
+            <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-3.jpg') ?>" alt="" class="img-fluid">
+                <img src="<?= base_url('assets/logis/img/service-3.jpg') ?>" alt="Inspeksi Kapal" class="img-fluid">
               </div>
-              <h3><a href="#" class="stretched-link">Cargo</a></h3>
-              <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem aut et molestiae ut et nihil</p>
+              <div class="card-body p-4 text-center">
+                <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Inspeksi Teknis</a></h3>
+                <p class="text-muted mb-0">Layanan verifikasi dan audit fisik lambung serta mesin kapal yang dilakukan oleh tim surveyor maritim independen bersertifikat kelas dunia.</p>
+              </div>
             </div>
           </div><!-- End Card Item -->
 
+          <!-- Layanan 4: Pengurusan Dokumen -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card">
+            <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-4.jpg') ?>" alt="" class="img-fluid">
+                <img src="<?= base_url('assets/logis/img/service-4.jpg') ?>" alt="Pengurusan Dokumen Legal" class="img-fluid">
               </div>
-              <h3><a href="#" class="stretched-link">Trucking</a></h3>
-              <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem aut et molestiae ut et nihil</p>
+              <div class="card-body p-4 text-center">
+                <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Legal & Dokumen</a></h3>
+                <p class="text-muted mb-0">Dukungan penuh untuk pengurusan administrasi kepemilikan kapal, perubahan bendera (flagging), serta dokumen klasifikasi (BKI, CCS, dll).</p>
+              </div>
             </div>
           </div><!-- End Card Item -->
 
+          <!-- Layanan 5: Pengiriman Kapal -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="card">
+            <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-5.jpg') ?>" alt="" class="img-fluid">
+                <img src="<?= base_url('assets/logis/img/service-5.jpg') ?>" alt="Pengiriman Kapal" class="img-fluid">
               </div>
-              <h3>Packaging</h3>
-              <p>Illo consequuntur quisquam delectus praesentium modi dignissimos facere vel cum onsequuntur maiores beatae consequatur magni voluptates</p>
+              <div class="card-body p-4 text-center">
+                <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Ship Delivery</a></h3>
+                <p class="text-muted mb-0">Manajemen logistik untuk pelayaran pemindahan kapal dari galangan (drydock) atau pelabuhan asal menuju pelabuhan tujuan akhir Anda.</p>
+              </div>
             </div>
           </div><!-- End Card Item -->
 
+          <!-- Layanan 6: Pembiayaan (Financing) -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="card">
+            <div class="card h-100 shadow-sm border-0">
               <div class="card-img">
-                <img src="<?= base_url('assets/logis/img/service-6.jpg') ?>" alt="" class="img-fluid">
+                <img src="<?= base_url('assets/logis/img/service-6.jpg') ?>" alt="Pembiayaan Maritim" class="img-fluid">
               </div>
-              <h3><a href="#" class="stretched-link">Warehousing</a></h3>
-              <p>Quas assumenda non occaecati molestiae. In aut earum sed natus eatae in vero. Ab modi quisquam aut nostrum unde et qui est non quo nulla</p>
+              <div class="card-body p-4 text-center">
+                <h3 class="fw-bold"><a href="#" class="stretched-link text-decoration-none" style="color: #0e1d34;">Pembiayaan (Financing)</a></h3>
+                <p class="text-muted mb-0">Konsultasi dan solusi pendanaan untuk pembelian armada melalui kemitraan strategis dengan berbagai lembaga keuangan maritim global.</p>
+              </div>
             </div>
           </div><!-- End Card Item -->
 
@@ -367,109 +385,95 @@
 
     </section><!-- /Services Section -->
 
-    <!-- Call To Action Section -->
-    <section id="call-to-action" class="call-to-action section dark-background">
+    <section id="call-to-action" class="call-to-action section dark-background text-center" style="background: linear-gradient(rgba(14, 29, 52, 0.8), rgba(14, 29, 52, 0.8)), url('<?= base_url('assets/logis/img/cta-bg.jpg') ?>') center center / cover fixed; padding: 100px 0;">
 
-      <img src="<?= base_url('assets/logis/img/cta-bg.jpg') ?>" alt="">
+      <div class="container" data-aos="zoom-in">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h3 class="text-white fw-bold mb-3">Siap Menemukan Armada Impian Anda?</h3>
+            <p class="text-white mb-4 fs-5" style="opacity: 0.9;">
+              Bergabunglah dengan ratusan perusahaan pelayaran dan agen maritim yang telah mempercayakan transaksi jual-beli kapal mereka kepada Drydock. Proses cepat, data transparan, dan jangkauan global.
+            </p>
 
-      <div class="container">
-        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-          <div class="col-xl-10">
-            <div class="text-center">
-              <h3>Call To Action</h3>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="cta-btn" href="#">Call To Action</a>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+              <a class="btn btn-primary rounded-pill px-5 py-3 fw-bold shadow" href="#produk" style="background-color: #0d6efd; border: none;">Katalog Kapal</a>
+              <a class="btn btn-outline-light rounded-pill px-5 py-3 fw-bold shadow" href="#contact">Hubungi Tim Kami</a>
             </div>
           </div>
         </div>
       </div>
 
-    </section><!-- /Call To Action Section -->
+    </section>
+    <section id="features" class="features section" style="padding: 60px 0;">
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <span>Features</span>
-        <h2>Features</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
+        <span>Fitur Platform</span>
+        <h2>Fitur Platform</h2>
+        <p>Teknologi yang dirancang untuk memudahkan setiap tahap transaksi maritim Anda</p>
+      </div>
       <div class="container">
 
-        <div class="row gy-4 align-items-center features-item">
+        <div class="row gy-4 align-items-center features-item mb-5">
           <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
-            <img src="<?= base_url('assets/logis/img/features-1.jpg') ?>" class="img-fluid" alt="Fitur 1">
+            <img src="<?= base_url('assets/logis/img/features-1.jpg') ?>" class="img-fluid rounded shadow" alt="Advanced Filter">
           </div>
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3 class="fw-bold">Penyaringan Spesifikasi Tingkat Lanjut</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Sistem pencarian cerdas yang menghemat waktu Anda dalam menyortir ribuan data kapal.
             </p>
             <ul>
-              <li><i class="bi bi-check"></i><span> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check"></i> <span>Ullam est qui quos consequatur eos accusamus.</span></li>
+              <li><i class="bi bi-check"></i> <span>Filter akurat berdasarkan Gross Tonnage (GT), Deadweight (DWT), dan tahun pembuatan.</span></li>
+              <li><i class="bi bi-check"></i> <span>Pencarian berbasis lokasi bendera (Flag) dan area navigasi.</span></li>
+              <li><i class="bi bi-check"></i> <span>Penyortiran mesin kapal berdasarkan merek dan kekuatan kW.</span></li>
             </ul>
           </div>
-        </div><!-- Features Item -->
-
-        <div class="row gy-4 align-items-center features-item">
+        </div>
+        <div class="row gy-4 align-items-center features-item mb-5">
           <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="200">
-            <img src="<?= base_url('assets/logis/img/features-2.jpg') ?>" class="img-fluid" alt="Fitur 2">
+            <img src="<?= base_url('assets/logis/img/features-2.jpg') ?>" class="img-fluid rounded shadow" alt="Price Trends">
           </div>
           <div class="col-md-7 order-2 order-md-1" data-aos="fade-up" data-aos-delay="200">
-            <h3>Corporis temporibus maiores provident</h3>
+            <h3 class="fw-bold">Analitik Tren Harga Pasar</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Ambil keputusan investasi yang lebih cerdas dengan dukungan data analitik visual.
             </p>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              Setiap detail kapal dilengkapi dengan grafik interaktif pergerakan harga jual. Fitur ini memberikan Anda visibilitas penuh terhadap valuasi pasar saat ini, riwayat harga, dan membantu menentukan penawaran yang kompetitif.
             </p>
           </div>
-        </div><!-- Features Item -->
-
-        <div class="row gy-4 align-items-center features-item">
+        </div>
+        <div class="row gy-4 align-items-center features-item mb-5">
           <div class="col-md-5 d-flex align-items-center" data-aos="zoom-out">
-            <img src="<?= base_url('assets/logis/img/features-3.jpg') ?>" class="img-fluid" alt="Fitur 3">
+            <img src="<?= base_url('assets/logis/img/features-3.jpg') ?>" class="img-fluid rounded shadow" alt="Virtual Negotiation">
           </div>
           <div class="col-md-7" data-aos="fade-up">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+            <h3 class="fw-bold">Ruang Negosiasi Virtual (Bidding Room)</h3>
+            <p>Fasilitas komunikasi terenkripsi yang mempertemukan pembeli dan pemilik kapal tanpa perlu perantara fisik.</p>
             <ul>
-              <li><i class="bi bi-check"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check"></i><span> Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check"></i> <span>Facilis ut et voluptatem aperiam. Autem soluta ad fugiat</span>.</li>
+              <li><i class="bi bi-check"></i> <span>Kirimkan nominal penawaran harga dengan satu klik persetujuan.</span></li>
+              <li><i class="bi bi-check"></i> <span>Ajukan permintaan inspeksi langsung dari dasbor Anda.</span></li>
+              <li><i class="bi bi-check"></i> <span>Rekam jejak percakapan tersimpan rapi sebagai dokumen legal awal.</span></li>
             </ul>
           </div>
-        </div><!-- Features Item -->
-
+        </div>
         <div class="row gy-4 align-items-center features-item">
           <div class="col-md-5 order-1 order-md-2 d-flex align-items-center" data-aos="zoom-out">
-            <img src="<?= base_url('assets/logis/img/features-4.jpg') ?>" class="img-fluid" alt="Fitur 4">
+            <img src="<?= base_url('assets/logis/img/features-4.jpg') ?>" class="img-fluid rounded shadow" alt="Verified Publisher">
           </div>
           <div class="col-md-7 order-2 order-md-1" data-aos="fade-up">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+            <h3 class="fw-bold">Sistem Verifikasi Publisher & Broker</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Keamanan transaksi Anda adalah prioritas kami dengan sistem verifikasi akun yang ketat.
             </p>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              Ketahui dengan siapa Anda bertransaksi. Setiap kapal yang diunggah menampilkan lencana verifikasi pengunggah beserta kontak komunikasi yang telah diautentikasi oleh tim keamanan kami untuk mencegah penipuan.
             </p>
           </div>
-        </div><!-- Features Item -->
-
+        </div>
       </div>
 
-    </section><!-- /Features Section -->
+    </section>
 
     <!-- Katalog Section (Dipanggil dari folder Katalog) -->
     <?= view('App\Modules\Katalog\Views\katalog_section', ['kapal_bulk' => $kapal_bulk]) ?>
