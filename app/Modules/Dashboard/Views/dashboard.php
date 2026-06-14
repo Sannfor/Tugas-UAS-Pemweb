@@ -18,8 +18,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="#">
-            🚢 DryDock
+        <a class="navbar-brand" href="<?= base_url('/') ?>">
+            <img src="<?= base_url('assets/images/drydock-logo-2.png') ?>"
+                alt="DryDock Logo"
+                height="100">
         </a>
 
         <button class="navbar-toggler"
@@ -35,30 +37,44 @@
 
                 <li class="nav-item">
                     <a class="nav-link active" href="#">
-                        Home
+                        Beranda
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#sale">
-                        Sale
+                        Katalog
                     </a>
                 </li>
 
-                <a href="<?= base_url('purchase') ?>"
-                class="btn btn-primary btn-lg">
-                    Purchase
-                </a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">
+                        Layanan
+                    </a>
+                </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#services">
-                        Services
+                        berita
+                    </a>
+                </li>
+                
+
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">
+                        laporan
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">
-                        Contact
+                        Tentang Kami
+                    </a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Provil
                     </a>
                 </li>
 
