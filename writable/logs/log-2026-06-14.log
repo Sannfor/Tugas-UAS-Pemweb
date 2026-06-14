@@ -1,0 +1,707 @@
+CRITICAL - 2026-06-14 05:13:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Produk\Views\katalog_section.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Produk\\Views\\katalog_section.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Produk\\Views\\katalog_section', [], true)
+ 3 APPPATH\Modules\Katalog\Views\katalog_section.php(62): view('App\\Modules\\Produk\\Views\\katalog_section', [...])
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Katalog\\Views\\katalog_section.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Katalog\\Views\\katalog_section', [], true)
+ 7 APPPATH\Modules\Beranda\Views\index.php(399): view('App\\Modules\\Katalog\\Views\\katalog_section', [...])
+ 8 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Beranda\\Views\\index.php')
+ 9 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+11 APPPATH\Modules\Beranda\Controllers\Beranda.php(18): view('App\\Modules\\Beranda\\Views\\index', [...])
+12 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\drydaugh\\public\\index.php')
+CRITICAL - 2026-06-14 05:14:04 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Produk\Views\katalog_section.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Produk\\Views\\katalog_section.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Produk\\Views\\katalog_section', [], true)
+ 3 APPPATH\Modules\Katalog\Views\katalog_section.php(62): view('App\\Modules\\Produk\\Views\\katalog_section', [...])
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Katalog\\Views\\katalog_section.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Katalog\\Views\\katalog_section', [], true)
+ 7 APPPATH\Modules\Beranda\Views\index.php(399): view('App\\Modules\\Katalog\\Views\\katalog_section', [...])
+ 8 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Beranda\\Views\\index.php')
+ 9 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+11 APPPATH\Modules\Beranda\Controllers\Beranda.php(18): view('App\\Modules\\Beranda\\Views\\index', [...])
+12 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\drydaugh\\public\\index.php')
+CRITICAL - 2026-06-14 05:14:09 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Produk\Views\katalog_section.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Produk\\Views\\katalog_section.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Produk\\Views\\katalog_section', [], true)
+ 3 APPPATH\Modules\Katalog\Views\katalog_section.php(62): view('App\\Modules\\Produk\\Views\\katalog_section', [...])
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Katalog\\Views\\katalog_section.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Katalog\\Views\\katalog_section', [], true)
+ 7 APPPATH\Modules\Beranda\Views\index.php(399): view('App\\Modules\\Katalog\\Views\\katalog_section', [...])
+ 8 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Beranda\\Views\\index.php')
+ 9 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+11 APPPATH\Modules\Beranda\Controllers\Beranda.php(18): view('App\\Modules\\Beranda\\Views\\index', [...])
+12 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\drydaugh\\public\\index.php')
+CRITICAL - 2026-06-14 05:14:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Produk\Views\katalog_section.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Produk\\Views\\katalog_section.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Produk\\Views\\katalog_section', [], true)
+ 3 APPPATH\Modules\Katalog\Views\katalog_section.php(62): view('App\\Modules\\Produk\\Views\\katalog_section', [...])
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Katalog\\Views\\katalog_section.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Katalog\\Views\\katalog_section', [], true)
+ 7 APPPATH\Modules\Beranda\Views\index.php(399): view('App\\Modules\\Katalog\\Views\\katalog_section', [...])
+ 8 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Beranda\\Views\\index.php')
+ 9 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+11 APPPATH\Modules\Beranda\Controllers\Beranda.php(18): view('App\\Modules\\Beranda\\Views\\index', [...])
+12 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\drydaugh\\public\\index.php')
+CRITICAL - 2026-06-14 05:15:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Produk\Views\katalog_section.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Produk\\Views\\katalog_section.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Produk\\Views\\katalog_section', [], true)
+ 3 APPPATH\Modules\Katalog\Views\katalog_section.php(62): view('App\\Modules\\Produk\\Views\\katalog_section', [...])
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Katalog\\Views\\katalog_section.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Katalog\\Views\\katalog_section', [], true)
+ 7 APPPATH\Modules\Beranda\Views\index.php(404): view('App\\Modules\\Katalog\\Views\\katalog_section', [...])
+ 8 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Beranda\\Views\\index.php')
+ 9 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+11 APPPATH\Modules\Beranda\Controllers\Beranda.php(18): view('App\\Modules\\Beranda\\Views\\index', [...])
+12 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\drydaugh\\public\\index.php')
+CRITICAL - 2026-06-14 05:15:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Produk\Views\katalog_section.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Produk\\Views\\katalog_section.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Produk\\Views\\katalog_section', [], true)
+ 3 APPPATH\Modules\Katalog\Views\katalog_section.php(62): view('App\\Modules\\Produk\\Views\\katalog_section', [...])
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Katalog\\Views\\katalog_section.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Katalog\\Views\\katalog_section', [], true)
+ 7 APPPATH\Modules\Beranda\Views\index.php(404): view('App\\Modules\\Katalog\\Views\\katalog_section', [...])
+ 8 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Beranda\\Views\\index.php')
+ 9 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+11 APPPATH\Modules\Beranda\Controllers\Beranda.php(18): view('App\\Modules\\Beranda\\Views\\index', [...])
+12 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\drydaugh\\public\\index.php')
+DEBUG - 2026-06-14 05:19:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-14 05:19:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Produk\Views\katalog_section.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Produk\\Views\\katalog_section.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Produk\\Views\\katalog_section', [], true)
+ 3 APPPATH\Modules\Katalog\Views\katalog_section.php(62): view('App\\Modules\\Produk\\Views\\katalog_section', [...])
+ 4 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Katalog\\Views\\katalog_section.php')
+ 5 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Katalog\\Views\\katalog_section', [], true)
+ 7 APPPATH\Modules\Beranda\Views\index.php(404): view('App\\Modules\\Katalog\\Views\\katalog_section', [...])
+ 8 SYSTEMPATH\View\View.php(240): include('C:\\xampp\\htdocs\\drydaugh\\app\\Modules\\Beranda\\Views\\index.php')
+ 9 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+11 APPPATH\Modules\Beranda\Controllers\Beranda.php(18): view('App\\Modules\\Beranda\\Views\\index', [...])
+12 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+13 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+14 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+18 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\drydaugh\\public\\index.php')
+DEBUG - 2026-06-14 05:21:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-14 05:21:44 --> ErrorException: Allowed memory size of 536870912 bytes exhausted (tried to allocate 32768 bytes)
+[Method: GET, Route: /]
+in APPPATH\Modules\Katalog\Views\katalog_section.php on line 1.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+DEBUG - 2026-06-14 05:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:15:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:17:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:29:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-14 07:29:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layouts/main.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(256): CodeIgniter\View\View->render('layouts/main', [], true)
+ 3 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 4 APPPATH\Modules\Profil\Controllers\Profil.php(11): view('App\\Modules\\Profil\\Views\\index')
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-14 07:31:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-14 07:37:51 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'marketplace_kapal' in D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'marketplace_kap...', 3306, '', 0)
+#1 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\code_vc\CI\Tugas-UAS-Pemweb\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Models\AuthModel.php(22): CodeIgniter\BaseModel->first()
+#7 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Controllers\Auth.php(51): App\Modules\Auth\Models\AuthModel->attemptLogin('test@gmail.com', '87654321')
+#8 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+#9 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+#10 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\code_vc\CI\Tugas-UAS-Pemweb\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\code_vc\CI\Tugas-UAS-Pemweb\system\rewrite.php(44): require_once('D:\\code_vc\\CI\\T...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'marketplace_kapal' in D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\code_vc\CI\Tugas-UAS-Pemweb\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Models\AuthModel.php(22): CodeIgniter\BaseModel->first()
+#6 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Controllers\Auth.php(51): App\Modules\Auth\Models\AuthModel->attemptLogin('test@gmail.com', '87654321')
+#7 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+#8 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+#9 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\code_vc\CI\Tugas-UAS-Pemweb\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\code_vc\CI\Tugas-UAS-Pemweb\system\rewrite.php(44): require_once('D:\\code_vc\\CI\\T...')
+#14 {main}
+CRITICAL - 2026-06-14 07:37:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'marketplace_kapal'
+[Method: POST, Route: auth/attemptLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Modules\Auth\Models\AuthModel.php(22): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Modules\Auth\Controllers\Auth.php(51): App\Modules\Auth\Models\AuthModel->attemptLogin('test@gmail.com', '87654321')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-14 07:38:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-14 07:38:03 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'marketplace_kapal' in D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'marketplace_kap...', 3306, '', 0)
+#1 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\code_vc\CI\Tugas-UAS-Pemweb\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Models\AuthModel.php(22): CodeIgniter\BaseModel->first()
+#7 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Controllers\Auth.php(51): App\Modules\Auth\Models\AuthModel->attemptLogin('test@gmail.com', '87654321')
+#8 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+#9 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+#10 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\code_vc\CI\Tugas-UAS-Pemweb\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\code_vc\CI\Tugas-UAS-Pemweb\system\rewrite.php(44): require_once('D:\\code_vc\\CI\\T...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'marketplace_kapal' in D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\code_vc\CI\Tugas-UAS-Pemweb\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Models\AuthModel.php(22): CodeIgniter\BaseModel->first()
+#6 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Controllers\Auth.php(51): App\Modules\Auth\Models\AuthModel->attemptLogin('test@gmail.com', '87654321')
+#7 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+#8 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+#9 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\code_vc\CI\Tugas-UAS-Pemweb\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\code_vc\CI\Tugas-UAS-Pemweb\system\rewrite.php(44): require_once('D:\\code_vc\\CI\\T...')
+#14 {main}
+CRITICAL - 2026-06-14 07:38:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'marketplace_kapal'
+[Method: POST, Route: auth/attemptLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Modules\Auth\Models\AuthModel.php(22): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Modules\Auth\Controllers\Auth.php(51): App\Modules\Auth\Models\AuthModel->attemptLogin('test@gmail.com', '87654321')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-14 07:38:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-14 07:38:11 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'marketplace_kapal' in D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'marketplace_kap...', 3306, '', 0)
+#1 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\code_vc\CI\Tugas-UAS-Pemweb\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#6 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Models\AuthModel.php(22): CodeIgniter\BaseModel->first()
+#7 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Controllers\Auth.php(51): App\Modules\Auth\Models\AuthModel->attemptLogin('test@gmail.com', '12345678')
+#8 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+#9 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+#10 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#12 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 D:\code_vc\CI\Tugas-UAS-Pemweb\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 D:\code_vc\CI\Tugas-UAS-Pemweb\system\rewrite.php(44): require_once('D:\\code_vc\\CI\\T...')
+#15 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'marketplace_kapal' in D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\code_vc\CI\Tugas-UAS-Pemweb\system\BaseModel.php(714): CodeIgniter\Model->doFirst()
+#5 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Models\AuthModel.php(22): CodeIgniter\BaseModel->first()
+#6 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Controllers\Auth.php(51): App\Modules\Auth\Models\AuthModel->attemptLogin('test@gmail.com', '12345678')
+#7 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+#8 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+#9 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\code_vc\CI\Tugas-UAS-Pemweb\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\code_vc\CI\Tugas-UAS-Pemweb\system\rewrite.php(44): require_once('D:\\code_vc\\CI\\T...')
+#14 {main}
+CRITICAL - 2026-06-14 07:38:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'marketplace_kapal'
+[Method: POST, Route: auth/attemptLogin]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(295): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(714): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Modules\Auth\Models\AuthModel.php(22): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Modules\Auth\Controllers\Auth.php(51): App\Modules\Auth\Models\AuthModel->attemptLogin('test@gmail.com', '12345678')
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-14 07:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:43:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:44:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:44:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:44:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:44:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:48:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-14 07:49:03 --> Table 'marketplace_kapal.negotiations' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = \'2\'
+AND `buyer_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = \'2\'
+AND `buyer_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = \'2\'
+AND `buyer_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = :ship_id:
+AND `buyer_id` = :buyer_id:', [...], false)
+ 5 APPPATH\Modules\Katalog\Controllers\Katalog.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Katalog\Controllers\Katalog->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Katalog\Controllers\Katalog))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+CRITICAL - 2026-06-14 07:49:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'marketplace_kapal.negotiations' doesn't exist
+[Method: GET, Route: kapal/detail/2]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = :ship_id:
+AND `buyer_id` = :buyer_id:', [...], false)
+ 2 APPPATH\Modules\Katalog\Controllers\Katalog.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Katalog\Controllers\Katalog->detail('2')
+ 4 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Katalog\Controllers\Katalog))
+ 5 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+CRITICAL - 2026-06-14 07:49:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'marketplace_kapal.negotiations' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = \'2\'
+AND `buyer_id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = \'2\'
+AND `buyer_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = :ship_id:
+AND `buyer_id` = :buyer_id:', [...], false)
+ 4 APPPATH\Modules\Katalog\Controllers\Katalog.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Katalog\Controllers\Katalog->detail('2')
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Katalog\Controllers\Katalog))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+CRITICAL - 2026-06-14 07:49:03 --> [Caused by] mysqli_sql_exception: Table 'marketplace_kapal.negotiations' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = \'2\'
+AND `buyer_id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = \'2\'
+AND `buyer_id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = \'2\'
+AND `buyer_id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `negotiations`
+WHERE `ship_id` = :ship_id:
+AND `buyer_id` = :buyer_id:', [...], false)
+ 5 APPPATH\Modules\Katalog\Controllers\Katalog.php(78): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Katalog\Controllers\Katalog->detail('2')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Katalog\Controllers\Katalog))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-14 07:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:55:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 07:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 08:07:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 08:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 08:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 08:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 08:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 09:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 09:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 09:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 09:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 09:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-14 09:58:48 --> TypeError: CodeIgniter\HTTP\RedirectResponse::to(): Argument #1 ($uri) must be of type string, null given, called in D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Auth\Controllers\Auth.php on line 61
+[Method: POST, Route: auth/attemptLogin]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 35.
+ 1 APPPATH\Modules\Auth\Controllers\Auth.php(61): CodeIgniter\HTTP\RedirectResponse->to(null)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Auth\Controllers\Auth->attemptLogin()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Auth\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-14 10:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:12:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:12:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-14 10:41:32 --> CSRF token verified.
+DEBUG - 2026-06-14 10:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:45:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:55:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:56:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 10:57:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:07:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:07:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:08:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:09:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:14:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:25:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:26:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:26:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:28:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:33:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:34:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:36:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:37:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:38:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:42:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:42:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:50:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:53:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:53:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:56:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:56:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:57:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 11:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:07:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:09:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:10:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:10:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-14 12:11:00 --> CSRF token verified.
+DEBUG - 2026-06-14 12:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:15:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:17:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:18:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:20:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:21:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:21:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-14 12:38:29 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "D:\code_vc\CI\Tugas-UAS-Pemweb\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 66.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(66): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(203): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(454): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(164): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Config\BaseService.php(203): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [])
+21 SYSTEMPATH\Common.php(1078): CodeIgniter\Config\BaseService::get('codeigniter')
+22 SYSTEMPATH\Boot.php(403): service('codeigniter')
+23 SYSTEMPATH\Boot.php(163): CodeIgniter\Boot::initializeCodeIgniter()
+24 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+CRITICAL - 2026-06-14 12:38:40 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "D:\code_vc\CI\Tugas-UAS-Pemweb\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 66.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(66): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\writable\\cache/')
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct(Object(Config\Cache))
+ 3 SYSTEMPATH\Config\Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler(Object(Config\Cache))
+ 4 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::cache(Object(Config\Cache), false)
+ 5 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('cache', [...])
+ 6 SYSTEMPATH\Config\Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance('cache', null)
+ 7 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(203): CodeIgniter\Config\BaseService::__callStatic('cache', [])
+ 9 SYSTEMPATH\Config\Services.php(454): CodeIgniter\Config\BaseService::get('cache')
+10 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::responsecache(Object(Config\Cache), null, false)
+11 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('responsecache', [...])
+12 SYSTEMPATH\Config\Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance('responsecache', null, null)
+13 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic('responsecache', [])
+15 SYSTEMPATH\Config\Services.php(164): CodeIgniter\CodeIgniter->__construct(Object(Config\App))
+16 SYSTEMPATH\Config\BaseService.php(325): CodeIgniter\Config\Services::codeigniter(Object(Config\App), false)
+17 SYSTEMPATH\Config\BaseService.php(264): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [...])
+18 SYSTEMPATH\Config\Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance('codeigniter', null)
+19 SYSTEMPATH\Config\BaseService.php(334): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Config\BaseService.php(203): CodeIgniter\Config\BaseService::__callStatic('codeigniter', [])
+21 SYSTEMPATH\Common.php(1078): CodeIgniter\Config\BaseService::get('codeigniter')
+22 SYSTEMPATH\Boot.php(403): service('codeigniter')
+23 SYSTEMPATH\Boot.php(163): CodeIgniter\Boot::initializeCodeIgniter()
+24 ROOTPATH\spark(87): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+DEBUG - 2026-06-14 12:41:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:43:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:43:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:44:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:44:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:44:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:48:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:49:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:49:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:50:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:52:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 12:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 13:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 13:02:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 13:02:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 13:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 13:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 13:07:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-14 13:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-14 13:20:51 --> Error: Class "App\Modules\Transaksi\Models\NegotiationModel" not found
+[Method: GET, Route: profil]
+in APPPATH\Modules\Profil\Controllers\Profil.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 3 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-14 13:22:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

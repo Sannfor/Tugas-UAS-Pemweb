@@ -50,6 +50,16 @@ $routes->get('kapal/detail/(:num)', '\App\Modules\Katalog\Controllers\Katalog::d
 $routes->post('kapal/tawar', '\App\Modules\Katalog\Controllers\Katalog::kirim_tawaran');
 
 $routes->get('profil', '\App\Modules\Profil\Controllers\Profil::index');
+$routes->get('beranda', '\App\Modules\Beranda\Controllers\Beranda::index');
+
+$routes->group('profil', ['namespace' => 'App\Modules\Profil\Controllers'], function($routes){
+
+    $routes->get('/', 'Profil::index');
+    $routes->get('transaksi', 'Profil::transaksi');
+    $routes->get('kapal-dibeli', 'Profil::kapalDibeli');
+    $routes->get('kapal-dijual', 'Profil::kapalDijual');
+
+});
 
 // Optional temporary route (Ditarik dari GitHub)
 $routes->get('home', 'App\Controllers\Home::index');
