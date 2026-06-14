@@ -7,8 +7,6 @@
     <title>Profil Saya - DryDock</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- CSS Logis -->
     <link href="<?= base_url('assets/logis/css/main.css') ?>" rel="stylesheet">
 
 
@@ -162,70 +160,92 @@
                                 <thead class="table-primary">
 
                                     <tr>
+                                        
                                         <th>No</th>
                                         <th>Tanggal</th>
                                         <th>Nama Kapal</th>
                                         <th>Kategori</th>
                                         <th>Transaksi</th>
+                                        <th>Harga</th>
                                         <th>Status</th>
                                     </tr>
 
                                 </thead>
 
-                                <tbody>
+                               <tbody>
 
-                                    <tr>
-                                        <td>1</td>
-                                        <td>10 Juni 2026</td>
-                                        <td>MV Ocean Star</td>
-                                        <td>Bulk Carrier</td>
-                                        <td>
-                                            <span class="badge bg-success">
-                                                Pembelian
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <span class="badge bg-primary">
-                                                Selesai
-                                            </span>
-                                        </td>
-                                    </tr>
+                                    <?php if (!empty($negotiations)) : ?>
 
-                                    <tr>
-                                        <td>2</td>
-                                        <td>07 Juni 2026</td>
-                                        <td>TB Bahari 01</td>
-                                        <td>Tug Boat</td>
-                                        <td>
-                                            <span class="badge bg-warning text-dark">
-                                                Penjualan
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <span class="badge bg-primary">
-                                                Selesai
-                                            </span>
-                                        </td>
-                                    </tr>
+                                        <?php $no = 1; ?>
 
-                                    <tr>
-                                        <td>3</td>
-                                        <td>01 Juni 2026</td>
-                                        <td>KM Nusantara</td>
-                                        <td>Passenger Ship</td>
-                                        <td>
-                                            <span class="badge bg-success">
-                                                Pembelian
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <span class="badge bg-secondary">
-                                                Diproses
-                                            </span>
-                                        </td>
-                                    </tr>
+                                        <?php foreach ($negotiations as $row) : ?>
 
-                                </tbody>
+                                            <tr>
+
+                                                <td><?= $no++ ?></td>
+
+                                                
+
+                                                <td>
+                                                    <?= date('d M Y', strtotime($row['created_at'])) ?>
+                                                </td>
+
+                                                <td>Kapal #<?= $row['ship_id'] ?></td>
+
+                                                <td>-</td>
+
+                                                <td>
+
+                                                    <?php if ($row['buyer_id'] == session()->get('id')) : ?>
+                                                        <span class="badge bg-success">
+                                                            Pembelian
+                                                        </span>
+                                                    <?php else : ?>
+                                                        <span class="badge bg-warning text-dark">
+                                                            Penjualan
+                                                        </span>
+                                                    <?php endif; ?>
+
+                                                </td>
+
+                                                <td>
+                                                    Rp <?= number_format($row['offer_price'], 0, ',', '.') ?>                           
+
+                                                <td>
+
+                                                    <?php if ($row['status'] == 'accepted') : ?>
+                                                        <span class="badge bg-primary">
+                                                            Selesai
+                                                        </span>
+
+                                                    <?php elseif ($row['status'] == 'pending') : ?>
+                                                        <span class="badge bg-secondary">
+                                                            Diproses
+                                                        </span>
+
+                                                    <?php else : ?>
+                                                        <span class="badge bg-danger">
+                                                            Ditolak
+                                                        </span>
+                                                    <?php endif; ?>
+
+                                                </td>
+
+                                            </tr>
+
+                                        <?php endforeach; ?>
+
+                                    <?php else : ?>
+
+                                        <tr>
+                                            <td colspan="6" class="text-center">
+                                                Belum ada riwayat transaksi.
+                                            </td>
+                                        </tr>
+
+                                    <?php endif; ?>
+
+                                    </tbody>
 
                             </table>
 
@@ -242,10 +262,16 @@
 
                         <?php endif; ?>
 
-                        <div class="d-flex justify-content-end mt-4">
+                        
 
-                             <a class="btn-getstarted logout-btn" href="<?= base_url('auth/logout') ?>"> Logout </a>
+                        <div style="text-align: center;">
+                            <a href="<?= base_url('profil/jual-kapal') ?>" class="btn btn-primary btn-lg">
+                                Jual Kapal
+                            </a>
 
+                            <a href="<?= base_url('logout') ?>" class="btn btn-danger btn-lg">
+                                Logout
+                            </a>
                         </div>
 
                     </div>

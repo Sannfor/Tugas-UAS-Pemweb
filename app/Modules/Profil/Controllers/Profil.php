@@ -48,4 +48,15 @@ class Profil extends BaseController
     {
         return view('App\Modules\Profil\Views\kapal_dijual');
     }
+    public function jualKapal()
+{
+    return view('App\Modules\Profil\Views\kategori');
+}
+
+    public function formJual($kategori)
+    {
+        $data['kategori'] = $kategori;
+
+        return view('App\Modules\Katalog\Views\form_jual', $data);
+    }
 }
