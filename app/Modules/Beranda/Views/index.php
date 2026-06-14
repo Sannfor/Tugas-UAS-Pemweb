@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 /**
  * @var array $kapal_bulk
  */
@@ -56,7 +57,7 @@
           <li><a href="#produk">Katalog</a></li>
           <li><a href="#berita">Berita</a></li>
           <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#tentangkami">Tentang Kami</a></li>
+          <li><a href="#team">Tentang Kami</a></li>
           <li><a href="#kontak">Kontak</a></li>
           <li><a href="#laporan">Laporan</a></li>
           <li><a href="#profil">Profil</a></li>
@@ -66,7 +67,7 @@
       </nav>
 
       <a class="btn-getstarted logout-btn" href="<?= base_url('auth/logout') ?>"> Logout </a>
-     
+
 
 
     </div>
@@ -174,53 +175,104 @@
 
     </section><!-- /Featured Services Section -->
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+    <!-- Tentang Section -->
+    <section id="team" class="team section-bg" style="padding: 60px 0;">
 
-      <div class="container">
+      <div class="container section-title" data-aos="fade-up">
+        <span>Tentang Kami</span>
+        <h2>Tentang Kami</h2>
 
-        <div class="row gy-4">
+        <p class="mt-3" style="max-width: 850px; margin: 0 auto; line-height: 1.8; text-align: center; font-size: 1.1rem;">
+          <strong>Drydock</strong> hadir sebagai inovasi digital terdepan dalam industri maritim, menyediakan platform <i>marketplace</i> armada kapal yang aman, transparan, dan efisien. Berawal dari visi untuk menyederhanakan proses transaksi maritim global, sistem ini dirancang secara khusus untuk menghubungkan pemilik kapal, agen, dan pembeli potensial di seluruh belahan dunia.
+        </p>
 
-          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first" data-aos="fade-up" data-aos-delay="200">
-            <img src="<?= base_url('assets/logis/img/about.jpg') ?>" class="img-fluid" alt="Tentang Kami">
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+        <div style="max-width: 850px; margin: 40px auto 0; text-align: left;">
+          <h5 class="fw-bold mb-4 text-center" style="color: #0e1d34; font-size: 1.2rem;">Nilai Utama Layanan Kami:</h5>
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-check-circle-fill fs-4 me-3" style="color: #0d6efd; margin-top: 2px;"></i>
+                <div>
+                  <strong style="color: #0e1d34; font-size: 1.1rem;">Katalog Armada Terlengkap</strong>
+                  <p class="text-muted mb-0" style="font-size: 1rem; line-height: 1.6;">Menyediakan ragam spesifikasi armada, mulai dari <i>Bulk Carrier</i>, <i>Tugboat</i>, hingga Kapal Penumpang.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-check-circle-fill fs-4 me-3" style="color: #0d6efd; margin-top: 2px;"></i>
+                <div>
+                  <strong style="color: #0e1d34; font-size: 1.1rem;">Data Spesifikasi Transparan</strong>
+                  <p class="text-muted mb-0" style="font-size: 1rem; line-height: 1.6;">Menyajikan informasi komprehensif terkait dimensi, kapasitas mesin, hingga standar emisi setiap kapal.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-check-circle-fill fs-4 me-3" style="color: #0d6efd; margin-top: 2px;"></i>
+                <div>
+                  <strong style="color: #0e1d34; font-size: 1.1rem;">Negosiasi Cepat & Interaktif</strong>
+                  <p class="text-muted mb-0" style="font-size: 1rem; line-height: 1.6;">Dilengkapi dengan fitur penawaran harga langsung (<i>bidding</i>) untuk mempercepat proses kesepakatan.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="d-flex align-items-start">
+                <i class="bi bi-check-circle-fill fs-4 me-3" style="color: #0d6efd; margin-top: 2px;"></i>
+                <div>
+                  <strong style="color: #0e1d34; font-size: 1.1rem;">Jangkauan Pasar Global</strong>
+                  <p class="text-muted mb-0" style="font-size: 1rem; line-height: 1.6;">Membuka akses tanpa batas geografis yang memudahkan ekspansi bisnis pelayaran ke ranah internasional.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5" data-aos="fade-up">
+
+        <div class="text-center mb-4">
+          <h3 class="fw-bold text-uppercase" style="color: #0e1d34; font-size: 1.5rem;">Tim Pengembang</h3>
+          <div style="width: 50px; height: 3px; background-color: #0d6efd; margin: 10px auto;"></div>
+        </div>
+
+        <div class="row justify-content-center text-center gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="member w-100">
+              <div class="member-img mb-3">
+                <img src="<?= base_url('assets/images/team/Hasan.jpg'); ?>" class="img-fluid rounded-circle" alt="Ahmadi Hasan" style="width: 200px; height: 200px; object-fit: cover; border: 8px solid rgba(0,0,0,0.04); padding: 5px;">
+              </div>
+              <div class="member-info">
+                <h4 class="fw-bold mb-1" style="color: #0e1d34; font-size: 1.25rem;">Ahmadi Hasan</h4>
+                <span class="d-block text-secondary mb-3 fw-semibold" style="font-size: 1rem;">2411016110012</span>
+                <p class="fst-italic text-muted px-3" style="font-size: 1.05rem;">"Try to do your best for the future."</p>
+              </div>
+            </div>
           </div>
 
-          <div class="col-lg-6 content order-last  order-lg-first" data-aos="fade-up" data-aos-delay="100">
-            <h3>About Us</h3>
-            <p>
-              Dolor iure expedita id fuga asperiores qui sunt consequatur minima. Quidem voluptas deleniti. Sit quia molestiae quia quas qui magnam itaque veritatis dolores. Corrupti totam ut eius incidunt reiciendis veritatis asperiores placeat.
-            </p>
-            <ul>
-              <li>
-                <i class="bi bi-diagram-3"></i>
-                <div>
-                  <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                  <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
-                </div>
-              </li>
-              <li>
-                <i class="bi bi-fullscreen-exit"></i>
-                <div>
-                  <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                  <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
-                </div>
-              </li>
-              <li>
-                <i class="bi bi-broadcast"></i>
-                <div>
-                  <h5>Voluptatem et qui exercitationem</h5>
-                  <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
-                </div>
-              </li>
-            </ul>
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="member w-100">
+              <div class="member-img mb-3">
+                <img src="<?= base_url('assets/images/team/Raka.jpg'); ?>" class="img-fluid rounded-circle" alt="Raka Erhansyah" style="width: 200px; height: 200px; object-fit: cover; border: 8px solid rgba(0,0,0,0.04); padding: 5px;">
+              </div>
+              <div class="member-info">
+                <h4 class="fw-bold mb-1" style="color: #0e1d34; font-size: 1.25rem;">Raka Erhansyah Arwany</h4>
+                <span class="d-block text-secondary mb-3 fw-semibold" style="font-size: 1rem;">2411016310006</span>
+                <p class="fst-italic text-muted px-3" style="font-size: 1.05rem;">"Beat stress by going to the gym."</p>
+              </div>
+            </div>
           </div>
 
         </div>
-
       </div>
-
-    </section><!-- /About Section -->
+    </section>
+    <!-- End Tentang Section -->
 
     <!-- Services Section -->
     <section id="services" class="services section">
