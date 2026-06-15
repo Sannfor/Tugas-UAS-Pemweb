@@ -67,35 +67,38 @@ class Produk extends BaseController
     // 4. FUNGSI DETAIL KAPAL
     // ---------------------------------------------------------
     public function detail($id)
-    {
-        if (!session()->get('isLoggedIn')) {
-            return redirect()->to(base_url('auth/login'))->with('error', 'Silakan login terlebih dahulu untuk melihat detail dan menawar kapal.');
+        {
+            if (!session()->get('isLoggedIn')) {
+                return redirect()->to(base_url('auth/login'))
+                    ->with('error', 'Silakan login terlebih dahulu.');
+            }
+
+            $kapal = $this->bulkCarrierModel->find($id);
+
+            if (!$kapal) {
+                $kapal = $this->passengerShipModel->find($id);
+            }
+
+            if (!$kapal) {
+                $kapal = $this->tugboatModel->find($id);
+            }
+
+            if (!$kapal) {
+                throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(
+                    'Data kapal tidak ditemukan'
+                );
+            }
+
+            $data = [
+                'title' => 'Detail ' . $kapal['ship_name'],
+                'kapal' => $kapal
+            ];
+
+            return view(
+                'App\Modules\Produk\Views\v_detail_produk',
+                $data
+            );
         }
-
-        // Asumsi detail ini mengambil dari bulkCarrier (perlu disesuaikan jika id dari tipe lain)
-        $kapal = $this->bulkCarrierModel->find($id);
-
-        if (!$kapal) {
-            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound("Data kapal tidak ditemukan");
-        }
-
-        $buyer_id = session()->get('user_data')['id'] ?? session()->get('id');
-        $db = \Config\Database::connect();
-        $cek_nego = $db->table('negotiations')->where('ship_id', $id)->where('buyer_id', $buyer_id)->get()->getRowArray();
-
-        $is_blocked = false;
-        if ($cek_nego && $cek_nego['attempt_count'] >= 2 && $cek_nego['status'] == 'rejected') {
-            $is_blocked = true;
-        }
-
-        $data = [
-            'title'      => 'Detail ' . $kapal['ship_name'] . ' - Drydock',
-            'kapal'      => $kapal,
-            'is_blocked' => $is_blocked
-        ];
-
-        return view('App\Modules\Produk\Views\v_detail_produk', $data);
-    }
 
     // ---------------------------------------------------------
     // 5. FUNGSI HAPUS 

@@ -1356,6 +1356,7 @@ DEBUG - 2026-06-15 12:38:05 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-06-15 12:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-15 12:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-15 12:41:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< Updated upstream
 DEBUG - 2026-06-15 13:04:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-15 13:04:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-15 13:04:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
@@ -1402,3 +1403,131 @@ DEBUG - 2026-06-15 13:54:20 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-06-15 13:54:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-15 13:55:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-15 13:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+DEBUG - 2026-06-15 13:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-15 13:37:43 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'marketplace_kap...', 3306, '', 0)
+#1 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Model.php(192): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\code_vc\CI\Tugas-UAS-Pemweb\system\BaseModel.php(615): CodeIgniter\Model->doFind(true, '2')
+#6 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Profil\Controllers\Profil.php(21): CodeIgniter\BaseModel->find('2')
+#7 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+#8 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+#9 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 D:\code_vc\CI\Tugas-UAS-Pemweb\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 D:\code_vc\CI\Tugas-UAS-Pemweb\system\rewrite.php(44): require_once('D:\\code_vc\\CI\\T...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Model.php(192): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\code_vc\CI\Tugas-UAS-Pemweb\system\BaseModel.php(615): CodeIgniter\Model->doFind(true, '2')
+#5 D:\code_vc\CI\Tugas-UAS-Pemweb\app\Modules\Profil\Controllers\Profil.php(21): CodeIgniter\BaseModel->find('2')
+#6 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+#7 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+#8 D:\code_vc\CI\Tugas-UAS-Pemweb\system\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 D:\code_vc\CI\Tugas-UAS-Pemweb\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 D:\code_vc\CI\Tugas-UAS-Pemweb\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 D:\code_vc\CI\Tugas-UAS-Pemweb\system\rewrite.php(44): require_once('D:\\code_vc\\CI\\T...')
+#13 {main}
+CRITICAL - 2026-06-15 13:37:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: profil]
+in SYSTEMPATH\Database\BaseConnection.php on line 606.
+ 1 SYSTEMPATH\Database\BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 3 SYSTEMPATH\Model.php(192): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(615): CodeIgniter\Model->doFind(true, '2')
+ 5 APPPATH\Modules\Profil\Controllers\Profil.php(21): CodeIgniter\BaseModel->find('2')
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 13:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:38:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-15 13:47:23 --> CSRF token verified.
+DEBUG - 2026-06-15 13:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:47:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:54:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:54:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:56:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:56:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 13:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 13:59:06 --> ErrorException: Undefined array key "dwt"
+[Method: GET, Route: kapal/detail/6]
+in APPPATH\Modules\Produk\Views\v_detail_produk.php on line 162.
+ 1 APPPATH\Modules\Produk\Views\v_detail_produk.php(162): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dwt"', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Produk\\Views\\v_detail_produk.php', 162)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Produk\\Views\\v_detail_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Produk\\Views\\v_detail_produk', [], true)
+ 5 APPPATH\Modules\Produk\Controllers\Produk.php(97): view('App\\Modules\\Produk\\Views\\v_detail_produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Produk\Controllers\Produk->detail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Produk\Controllers\Produk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 14:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 14:00:37 --> ErrorException: Undefined array key "cargo_hold_no"
+[Method: GET, Route: kapal/detail/6]
+in APPPATH\Modules\Produk\Views\v_detail_produk.php on line 170.
+ 1 APPPATH\Modules\Produk\Views\v_detail_produk.php(170): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cargo_hold_no"', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Produk\\Views\\v_detail_produk.php', 170)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Produk\\Views\\v_detail_produk.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Produk\\Views\\v_detail_produk', [], true)
+ 5 APPPATH\Modules\Produk\Controllers\Produk.php(97): view('App\\Modules\\Produk\\Views\\v_detail_produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Produk\Controllers\Produk->detail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Produk\Controllers\Produk))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 14:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:07:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> Stashed changes
+DEBUG - 2026-06-15 14:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 14:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
