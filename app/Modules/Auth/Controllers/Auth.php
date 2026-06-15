@@ -58,7 +58,10 @@ class Auth extends BaseController
 
         $this->setUserSession($user);
 
-        return redirect()->to($this->redirectByRole());
+        // Tambahkan pesan sukses yang berbeda untuk Admin dan User
+        $pesan = ($user['role'] === 'admin') ? 'Selamat datang di Dasbor Admin Drydock!' : 'Login berhasil!';
+        
+        return redirect()->to($this->redirectByRole())->with('sukses', $pesan);
     }
 
     /*
@@ -209,12 +212,11 @@ class Auth extends BaseController
 
     private function redirectByRole()
     {
-    if (session()->get('role') === 'admin') {
-    return '/admin/dashboard';
-    }
+        if (session()->get('role') === 'admin') {
+            return '/admin'; // Disesuaikan dengan route modul Admin yang baru
+        }
 
-    return '/';
-
+        return '/beranda'; // Diarahkan eksplisit ke beranda untuk user biasa
     }
 
 }

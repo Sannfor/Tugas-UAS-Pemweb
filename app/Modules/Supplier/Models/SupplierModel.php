@@ -10,8 +10,9 @@ class SupplierModel extends Model
     protected $primaryKey       = 'id_supplier';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
-    
-    protected $allowedFields    = ['nama_perusahaan', 'nama_kontak', 'email', 'telepon', 'alamat', 'status_verifikasi'];
+
+    // Tambahkan 'user_id' di dalam array
+    protected $allowedFields = ['user_id', 'nama_perusahaan', 'nama_kontak', 'email', 'telepon', 'alamat', 'status_verifikasi'];
 
     protected $useTimestamps    = true;
     protected $createdField     = 'created_at';

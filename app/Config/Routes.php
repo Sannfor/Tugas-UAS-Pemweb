@@ -30,13 +30,16 @@ $routes->group('auth', ['namespace' => 'App\Modules\Auth\Controllers'], function
 // --------------------------------------------------------------------
 // 3. Rute Dashboard & Admin
 // --------------------------------------------------------------------
-// Dashboard Umum (Ditarik dari GitHub)
-$routes->get('dashboard', '\App\Modules\Dashboard\Controllers\Dashboard::index');
+// Rute untuk Modul Admin
+$routes->get('admin', '\App\Modules\Admin\Controllers\Admin::index');
 
-// Dashboard Khusus Admin
-$routes->group('admin', ['namespace' => 'App\Modules\Admin\Controllers'], function ($routes) {
-    $routes->get('dashboard', 'Dashboard::index');      
-});
+// Rute placeholder untuk CRUD yang akan datang
+$routes->get('admin/pengguna', '\App\Modules\Admin\Controllers\Admin::pengguna');
+$routes->get('admin/produk', '\App\Modules\Admin\Controllers\Admin::produk');
+
+$routes->get('supplier/daftar', '\App\Modules\Supplier\Controllers\Supplier::daftar');
+$routes->post('supplier/simpan_pendaftaran', '\App\Modules\Supplier\Controllers\Supplier::simpan_pendaftaran');
+$routes->get('admin/supplier', '\App\Modules\Admin\Controllers\Admin::supplier');
 
 // --------------------------------------------------------------------
 // 4. Rute Katalog & Transaksi (Manajemen, Detail Kapal, Penawaran)

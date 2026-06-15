@@ -55,6 +55,31 @@ class Produk extends BaseController
     // ---------------------------------------------------------
     public function form_jual($kategori = 'bulk-carrier')
     {
+        // 0. Pastikan user sudah login
+        if (!session()->get('isLoggedIn')) {
+            return redirect()->to(base_url('auth/login'));
+        }
+
+        $user_id = session()->get('id');
+        $db = \Config\Database::connect();
+
+        // 1. CEK KELENGKAPAN PROFIL (users table)
+        $user = $db->table('users')->where('id', $user_id)->get()->getRowArray();
+        
+        // Jika NPWP, No Bank, atau Domisili masih kosong, lemparkan kembali ke Profil
+        if (empty($user['npwp']) || empty($user['no_bank']) || empty($user['domisili_pelabuhan'])) {
+            return redirect()->to(base_url('profil'))->with('error', 'Akses ditolak! Silakan isi kolom NPWP, No Rekening, dan Domisili Pelabuhan, lalu klik "Simpan Perubahan" sebelum menjual kapal.');
+        }
+
+        // 2. CEK STATUS SUPPLIER (supplier table)
+        $supplier = $db->table('supplier')->where('user_id', $user_id)->get()->getRowArray();
+        
+        // Jika belum ada data di tabel supplier, lemparkan ke form pendaftaran supplier
+        if (!$supplier) {
+            return redirect()->to(base_url('supplier/daftar'))->with('error', 'Langkah Terakhir! Anda harus melengkapi profil Perusahaan / Agen Supplier Anda terlebih dahulu.');
+        }
+
+        // 3. JIKA LOLOS SEMUA VALIDASI, TAMPILKAN FORM JUAL KAPAL
         $data = [
             'title'    => 'Jual Kapal - ' . ucwords(str_replace('-', ' ', $kategori)),
             'kategori' => $kategori
