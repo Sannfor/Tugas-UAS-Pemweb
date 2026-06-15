@@ -70,7 +70,14 @@
 
                 <div class="row gy-5">
                     <div class="col-lg-7">
-                        <img src="<?= base_url('assets/images/bulk_carrier/' . $kapal['ship_name'] . '.jpg'); ?>" alt="<?= esc($kapal['ship_name']) ?>" class="img-fluid rounded shadow-sm w-100" style="object-fit: cover; max-height: 500px;">
+                        <img src="<?= base_url(
+                            isset($kapal['passengers'])
+                                ? 'assets/images/passenger/' . $kapal['image']
+                                : (isset($kapal['bollard_pull'])
+                                    ? 'assets/images/tugboat/' . $kapal['image']
+                                    : 'assets/images/bulk_carrier/' . $kapal['image'])
+                        ); ?>"
+                        class="img-fluid rounded shadow-sm w-100">
 
                         <div class="mt-4 p-4 border rounded">
 
@@ -114,84 +121,133 @@
                                 <table class="table table-bordered table-hover mb-0 spec-table">
                                     <tbody>
                                         <tr>
-                                            <th>Tipe Kapal</th>
-                                            <td><?= esc($kapal['ship_type']) ?></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Klasifikasi (Class)</th>
-                                            <td><?= esc($kapal['class']) ?></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tempat Pembuatan</th>
-                                            <td><?= esc($kapal['built_place']) ?></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tanggal Pembuatan</th>
-                                            <td><?= date('d M Y', strtotime($kapal['built_date'])) ?></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Bendera</th>
-                                            <td><?= esc($kapal['flag']) ?></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Area Navigasi</th>
-                                            <td><?= esc($kapal['navigation_area']) ?></td>
+                                            <th>DWT</th>
+                                            <td><?= esc($kapal['dwt'] ?? '-') ?> Ton</td>
                                         </tr>
 
-                                        <tr class="table-light">
-                                            <td colspan="2"><strong>Dimensi & Kapasitas</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <th>LOA (Panjang)</th>
-                                            <td><?= esc($kapal['loa']) ?> m</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Breadth (Lebar)</th>
-                                            <td><?= esc($kapal['breadth']) ?> m</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Depth (Kedalaman)</th>
-                                            <td><?= esc($kapal['depth']) ?> m</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Draft</th>
-                                            <td><?= esc($kapal['draft']) ?> m</td>
-                                        </tr>
-                                        <tr>
-                                            <th>DWT</th>
-                                            <td><?= esc($kapal['dwt']) ?> Ton</td>
-                                        </tr>
                                         <tr>
                                             <th>Gross Tonnage (GT)</th>
-                                            <td><?= esc($kapal['gt']) ?> Ton</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Jumlah Palka</th>
-                                            <td><?= esc($kapal['cargo_hold_no']) ?></td>
+                                            <td><?= esc($kapal['gt'] ?? '-') ?> Ton</td>
                                         </tr>
 
-                                        <tr class="table-light">
-                                            <td colspan="2"><strong>Mesin Utama (Main Engine)</strong></td>
+                                        <tr>
+                                            <th>Net Tonnage (NT)</th>
+                                            <td><?= esc($kapal['nt'] ?? '-') ?> Ton</td>
                                         </tr>
+
+                                        <tr>
+                                            <th>Jumlah Palka</th>
+                                            <td><?= esc($kapal['cargo_hold_no'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Panjang Hatch</th>
+                                            <td><?= esc($kapal['hatch_length'] ?? '-') ?> m</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Lebar Hatch</th>
+                                            <td><?= esc($kapal['hatch_width'] ?? '-') ?> m</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Kapasitas Muatan</th>
+                                            <td><?= esc($kapal['capacity'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Derrick Crane</th>
+                                            <td><?= esc($kapal['derrick_crane'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Tipe Konstruksi Hull</th>
+                                            <td><?= esc($kapal['hull_construction_type'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Tipe Hatch Cover</th>
+                                            <td><?= esc($kapal['hatch_cover_type'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Kapasitas Penumpang</th>
+                                            <td><?= esc($kapal['passengers'] ?? '-') ?> Orang</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Bollard Pull</th>
+                                            <td><?= esc($kapal['bollard_pull'] ?? '-') ?> Ton</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Merk Rudder Propeller</th>
+                                            <td><?= esc($kapal['rudder_propeller_brand'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Fire Fighting</th>
+                                            <td><?= esc($kapal['fire_fighting'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Propulsion Type</th>
+                                            <td><?= esc($kapal['propulsion_type'] ?? '-') ?></td>
+                                        </tr>
+
                                         <tr>
                                             <th>Merk Mesin</th>
-                                            <td><?= esc($kapal['me_brand']) ?></td>
+                                            <td><?= esc($kapal['me_brand'] ?? '-') ?></td>
                                         </tr>
+
                                         <tr>
                                             <th>Model Mesin</th>
-                                            <td><?= esc($kapal['main_engine_model']) ?></td>
+                                            <td><?= esc($kapal['main_engine_model'] ?? '-') ?></td>
                                         </tr>
+
                                         <tr>
                                             <th>Daya Mesin</th>
-                                            <td><?= esc($kapal['me_power']) ?> kW</td>
+                                            <td><?= esc($kapal['me_power'] ?? '-') ?> kW</td>
                                         </tr>
+
+                                        <tr>
+                                            <th>RPM</th>
+                                            <td><?= esc($kapal['rpm'] ?? '-') ?></td>
+                                        </tr>
+
                                         <tr>
                                             <th>Kecepatan</th>
-                                            <td><?= esc($kapal['speed']) ?> Knots</td>
+                                            <td><?= esc($kapal['speed'] ?? '-') ?> Knots</td>
                                         </tr>
+
                                         <tr>
-                                            <th>Standar Emisi</th>
-                                            <td><?= esc($kapal['nox_emission_standard']) ?></td>
+                                            <th>Merk Mesin Bantu</th>
+                                            <td><?= esc($kapal['aux_engine_brand'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Jumlah Mesin Bantu</th>
+                                            <td><?= esc($kapal['aux_engine_no'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Daya Mesin Bantu</th>
+                                            <td><?= esc($kapal['aux_engine_power'] ?? '-') ?> kW</td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Konsumsi BBM</th>
+                                            <td><?= esc($kapal['oil_consumption'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Standar Emisi NOX</th>
+                                            <td><?= esc($kapal['nox_emission_standard'] ?? '-') ?></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Tanggal Available</th>
+                                            <td><?= esc($kapal['release_date'] ?? '-') ?></td>
                                         </tr>
                                     </tbody>
                                 </table>
