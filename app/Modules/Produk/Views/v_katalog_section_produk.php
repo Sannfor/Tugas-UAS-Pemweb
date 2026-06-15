@@ -53,7 +53,10 @@
           <div class="col-lg-4 catalog-item kategori-bulk" data-aos="zoom-in">
             <div class="pricing-item">
               <div class="text-center mb-3">
-                <img src="<?= base_url('assets/images/bulk_carrier/' . $kapal['ship_name'] . '.jpg'); ?>" class="img-fluid rounded" alt="<?= esc($kapal['ship_name']); ?>" style="height: 250px; width: 100%; object-fit: cover;">
+               <img src="<?= base_url('assets/images/bulk_carrier/' . ($kapal['image'] ?? 'default.jpg')); ?>"
+                  class="img-fluid rounded"
+                  alt="<?= esc($kapal['ship_name']); ?>"
+                  style="height: 250px; width: 100%; object-fit: cover;">      
               </div>
               <h3><?= esc($kapal['ship_name']); ?></h3>
               <h4><sup>$</sup><?= number_format($kapal['price'], 0, ',', '.'); ?></h4>
@@ -72,7 +75,10 @@
         <?php foreach ($kapal_tugboat as $kapal) : ?>
           <div class="col-lg-4 catalog-item kategori-tugboat" data-aos="zoom-in">
             <div class="pricing-item" style="border-top-color: #ff9800;"> <div class="text-center mb-3">
-                <img src="<?= base_url('assets/images/tugboat/' . $kapal['ship_name'] . '.jpg'); ?>" class="img-fluid rounded" alt="<?= esc($kapal['ship_name']); ?>" style="height: 250px; width: 100%; object-fit: cover;">
+                <img src="<?= base_url('assets/images/tugboat/' . ($kapal['image'] ?? 'default.jpg')); ?>"
+                  class="img-fluid rounded"
+                  alt="<?= esc($kapal['ship_name']); ?>"
+                  style="height: 250px; width: 100%; object-fit: cover;">
               </div>
               <h3><?= esc($kapal['ship_name']); ?></h3>
               <h4><sup>$</sup><?= number_format($kapal['price'], 0, ',', '.'); ?></h4> <ul>
@@ -89,7 +95,10 @@
         <?php foreach ($kapal_passenger as $kapal) : ?>
           <div class="col-lg-4 catalog-item kategori-passenger" data-aos="zoom-in">
             <div class="pricing-item" style="border-top-color: #28a745;"> <div class="text-center mb-3">
-                <img src="<?= base_url('assets/images/passenger/' . $kapal['ship_name'] . '.jpg'); ?>" class="img-fluid rounded" alt="<?= esc($kapal['ship_name']); ?>" style="height: 250px; width: 100%; object-fit: cover;">
+               <img src="<?= base_url('assets/images/passenger/' . ($kapal['image'] ?? 'default.jpg')); ?>"
+                  class="img-fluid rounded"
+                  alt="<?= esc($kapal['ship_name']); ?>"
+                  style="height: 250px; width: 100%; object-fit: cover;">
               </div>
               <h3><?= esc($kapal['ship_name']); ?></h3>
               <h4><sup>$</sup><?= number_format($kapal['price'], 0, ',', '.'); ?></h4>

@@ -16,6 +16,6 @@ class PassengerShipModel extends Model
         'passengers', 'me_brand', 'main_engine_model', 'me_power', 'rpm', 
         'speed', 'aux_engine_brand', 'aux_engine_no', 'aux_engine_power', 
         'oil_consumption', 'main_engine_no', 'nox_emission_standard', 
-        'release_date', 'status', 'price'
+        'release_date', 'status', 'price','image'
     ];
 }

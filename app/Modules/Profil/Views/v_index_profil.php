@@ -100,9 +100,6 @@
       </nav>
     </div>
   </header>
-
-   
-
 <section class="profile-section">
     <div class="container">
         <div class="row justify-content-center">
@@ -238,10 +235,17 @@
                         </div>
                         <?php endif; ?>
 
+
                         <div style="text-align: center; margin-top: 20px;">
-                            <a href="<?= base_url('kategori') ?>" class="btn btn-primary btn-lg">
+
+                            <button
+                                type="button"
+                                class="btn btn-primary btn-lg"
+                                data-bs-toggle="modal"
+                                data-bs-target="#kategoriModal">
                                 Jual Kapal
-                            </a>
+                            </button>
+
                             <a href="<?= base_url('auth/logout') ?>" class="btn btn-danger btn-lg">
                                 Logout
                             </a>
@@ -252,6 +256,42 @@
         </div>
     </div>
 </section>
+
+<!-- Modal Pilih Kategori -->
+<div class="modal fade" id="kategoriModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    🚢 Pilih Kategori Kapal
+                </h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <?php foreach($kategori as $k): ?>
+
+                    <a href="<?= base_url('penjualan/' . $k['slug']) ?>"
+                    class="btn btn-outline-primary w-100 mb-3 p-3">
+
+                        <?= esc($k['nama_kategori']) ?>
+
+                    </a>
+
+                <?php endforeach; ?>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <script src="<?= base_url('assets/logis/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 </body>

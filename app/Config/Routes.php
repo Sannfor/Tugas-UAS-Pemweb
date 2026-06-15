@@ -97,5 +97,15 @@ $routes->get(
     '\App\Modules\Berita\Controllers\Berita::detail/$1'
 );
 
+$routes->post(
+    'penjualan/simpan',
+    '\App\Modules\Penjualan\Controllers\Penjualan::simpan'
+);
+
+$routes->get(
+    'penjualan/(:segment)',
+    '\App\Modules\Penjualan\Controllers\Penjualan::index/$1'
+);
+
 // Route khusus untuk menangani form kontak dari Module Kontak
 $routes->post('kontak/kirim', '\Modules\Kontak\Controllers\Kontak::kirim');

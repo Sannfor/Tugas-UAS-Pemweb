@@ -4,7 +4,8 @@ namespace App\Modules\Profil\Controllers;
 
 use App\Controllers\BaseController;
 use App\Modules\Transaksi\Models\NegotiationModel;
- use App\Modules\Auth\Models\AuthModel;
+use App\Modules\Auth\Models\AuthModel;
+use App\Modules\Kategori\Models\KategoriModel;
 
 
 class Profil extends BaseController
@@ -29,6 +30,10 @@ class Profil extends BaseController
 
     $data['user'] = $user;
     $data['negotiations'] = $negotiations;
+
+    $kategoriModel = new KategoriModel();
+
+    $data['kategori'] = $kategoriModel->findAll();
 
     return view('App\Modules\Profil\Views\v_index_profil', $data);
 }
@@ -60,6 +65,7 @@ class Profil extends BaseController
     }
 
    
+
 
     public function updateProfil()
     {

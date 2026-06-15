@@ -17,6 +17,6 @@ class TugboatModel extends Model
         'bollard_pull', 'rudder_propeller_brand', 'me_brand', 'main_engine_model', 
         'me_power', 'rpm', 'speed', 'aux_engine_brand', 'aux_engine_no', 
         'aux_engine_power', 'oil_consumption', 'main_engine_no', 'fire_fighting', 
-        'propulsion_type', 'nox_emission_standard', 'release_date'
+        'propulsion_type', 'nox_emission_standard', 'release_date','image'
     ];
 }

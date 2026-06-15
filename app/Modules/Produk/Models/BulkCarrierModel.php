@@ -24,7 +24,7 @@ class BulkCarrierModel extends Model
         'aux_engine_brand', 'aux_engine_no', 'aux_engine_power', 
         'oil_consumption', 'main_engine_no', 'derrick_crane', 
         'hull_construction_type', 'hatch_cover_type', 'nox_emission_standard', 
-        'release_date', 'status', 'price'
+        'release_date', 'status', 'price', 'image'
     ];
 
     // Mengaktifkan fitur otomatis pengisian created_at dan updated_at
