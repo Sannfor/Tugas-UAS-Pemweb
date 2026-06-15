@@ -45,9 +45,13 @@ $routes->group('admin', ['namespace' => 'App\Modules\Admin\Controllers'], functi
 $routes->get('katalog/manajemen', '\App\Modules\Katalog\Controllers\Katalog::index');
 $routes->get('katalog/hapus/(:num)', '\App\Modules\Katalog\Controllers\Katalog::hapus/$1');
 
-// Rute untuk pembeli (Melihat detail dan menawar)
-$routes->get('kapal/detail/(:num)', '\App\Modules\Katalog\Controllers\Katalog::detail/$1');
-$routes->post('kapal/tawar', '\App\Modules\Katalog\Controllers\Katalog::kirim_tawaran');
+// UBAH MENJADI SEPERTI INI:
+$routes->get('kapal/detail/(:num)', '\App\Modules\Produk\Controllers\Produk::detail/$1');
+$routes->post('kapal/tawar', '\App\Modules\Produk\Controllers\Produk::kirim_tawaran');
+
+// Tambahkan juga rute untuk halaman Admin/Kategori/Supplier jika diperlukan:
+$routes->get('kategori', '\App\Modules\Kategori\Controllers\Kategori::index');
+$routes->get('supplier', '\App\Modules\Supplier\Controllers\Supplier::index');
 
 $routes->get('profil', '\App\Modules\Profil\Controllers\Profil::index');
 $routes->get('beranda', '\App\Modules\Beranda\Controllers\Beranda::index');
@@ -64,3 +68,6 @@ $routes->group('profil', ['namespace' => 'App\Modules\Profil\Controllers'], func
 
 // Optional temporary route (Ditarik dari GitHub)
 $routes->get('home', 'App\Controllers\Home::index');
+
+// Route khusus untuk menangani form kontak dari Module Kontak
+$routes->post('kontak/kirim', '\Modules\Kontak\Controllers\Kontak::kirim');

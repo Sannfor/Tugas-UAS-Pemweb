@@ -38,7 +38,8 @@ class Autoload extends AutoloadConfig
      * @var array<string, list<string>|string>
      */
     public $psr4 = [
-        APP_NAMESPACE => APPPATH,
+        APP_NAMESPACE => APPPATH, // Ini bawaan asli, biarkan saja
+        'Modules'     => APPPATH . 'Modules', // Tambahkan baris ini!
     ];
 
     /**

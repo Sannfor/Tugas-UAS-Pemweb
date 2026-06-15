@@ -3,9 +3,10 @@
 namespace App\Modules\Beranda\Controllers;
 
 use App\Controllers\BaseController;
-use App\Modules\Katalog\Models\BulkCarrierModel;
-use App\Modules\Katalog\Models\TugboatModel;
-use App\Modules\Katalog\Models\PassengerShipModel; // Tambahkan import ini
+
+use App\Modules\Produk\Models\BulkCarrierModel;
+use App\Modules\Produk\Models\TugboatModel;
+use App\Modules\Produk\Models\PassengerShipModel;
 
 class Beranda extends BaseController
 {
