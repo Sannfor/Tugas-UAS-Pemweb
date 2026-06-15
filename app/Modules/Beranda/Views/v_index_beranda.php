@@ -83,7 +83,9 @@
           <!-- Dropdown Menu Informasi -->
           <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#berita">Berita</a></li>
+             <li>
+                <a href="<?= base_url('berita') ?>">Berita</a>
+            </li>
               <li><a href="#laporan">Laporan</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
@@ -95,11 +97,6 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-
-
-
-
     </div>
   </header>
 

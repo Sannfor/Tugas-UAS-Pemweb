@@ -9,7 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= base_url('assets/logis/css/main.css') ?>" rel="stylesheet">
 
-
     <style>
         body {
             background: #f4f7fc;
@@ -71,63 +70,59 @@
 
 <body>
 
-<!-- HEADER -->
 <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
       <a href="<?= base_url() ?>" class="logo d-flex align-items-center me-auto">
         <img src="<?= base_url('assets/images/drydock-logo-2w.png') ?>" alt="Drydock Logo" style="max-height: 140px;">
       </a>
 
-     
-
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="<?= base_url('beranda') ?>">Beranda</a></li>
-           <li><a href="#tentangkami">Tentang Kami</a></li>
-          <li><a href="#produk">Katalog</a></li>
+          <li><a href="<?= base_url('beranda') ?>" >Beranda</a></li>
+          <li><a href="#tentangkami">Tentang Kami</a></li>
           <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#berita">Berita</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-          <li><a href="#laporan">Laporan</a></li>
+          <li><a href="#produk">Katalog</a></li>
+
+          <!-- Dropdown Menu Informasi -->
+          <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <a href="<?= base_url('berita') ?>">Berita</a>
+              <li><a href="#laporan">Laporan</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#contact">Kontak</a></li>
           <li><a href="<?= base_url('profil') ?>" class="active">Profil</a></li>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-    
     </div>
   </header>
 
-<!-- PROFILE -->
+   
+
 <section class="profile-section">
-
     <div class="container">
-
         <div class="row justify-content-center">
-
             <div class="col-lg-8">
-
                 <div class="card profile-card">
-
                     <div class="profile-header">
-
                         <div class="profile-avatar">
-                            <?= strtoupper(substr($user['nama'], 0, 1)) ?>
+                            <?= strtoupper(substr($user['nama'] ?? $user['username'] ?? 'U', 0, 1)) ?>
                         </div>
 
-                        <h3 class="mb-1"><?= esc($user['nama']) ?></h3>
-                        <p class="mb-0"><?= esc($user['role']) ?></p>
-
+                        <h3 class="mb-1"><?= esc($user['nama'] ?? $user['username'] ?? 'Nama User') ?></h3>
+                        <p class="mb-0"><?= esc($user['role'] ?? 'Role') ?></p>
                     </div>
 
                     <div class="card-body p-4">
-
                         <div class="mb-3">
                             <label class="form-label fw-bold">Nama</label>
                             <input type="text"
                                    class="form-control"
-                                   value="<?= esc($user['nama']) ?>"
+                                   value="<?= esc($user['nama'] ?? $user['username'] ?? '') ?>"
                                    readonly>
                         </div>
 
@@ -135,7 +130,7 @@
                             <label class="form-label fw-bold">Email</label>
                             <input type="text"
                                    class="form-control"
-                                   value="<?= esc($user['email']) ?>"
+                                   value="<?= esc($user['email'] ?? '') ?>"
                                    readonly>
                         </div>
 
@@ -143,13 +138,11 @@
                             <label class="form-label fw-bold">Role</label>
                             <input type="text"
                                    class="form-control"
-                                   value="<?= esc($user['role']) ?>"
+                                   value="<?= esc($user['role'] ?? '') ?>"
                                    readonly>
                         </div>
 
-                        <form action="<?= base_url('profil/update') ?>"
-                            method="post">
-
+                        <form action="<?= base_url('profil/update') ?>" method="post">
                             <?= csrf_field() ?>
 
                             <div class="mb-3">
@@ -157,7 +150,7 @@
                                 <input type="text"
                                     name="npwp"
                                     class="form-control"
-                                    value="<?= $user['npwp'] ?? '' ?>">
+                                    value="<?= esc($user['npwp'] ?? '') ?>">
                             </div>
 
                             <div class="mb-3">
@@ -165,7 +158,7 @@
                                 <input type="text"
                                     name="no_bank"
                                     class="form-control"
-                                    value="<?= $user['no_bank'] ?? '' ?>">
+                                    value="<?= esc($user['no_bank'] ?? '') ?>">
                             </div>
 
                             <div class="mb-3">
@@ -173,30 +166,22 @@
                                 <input type="text"
                                     name="domisili_pelabuhan"
                                     class="form-control"
-                                    value="<?= $user['domisili_pelabuhan'] ?? '' ?>">
+                                    value="<?= esc($user['domisili_pelabuhan'] ?? '') ?>">
                             </div>
 
-                            <button type="submit"
-                                    class="btn btn-success">
+                            <button type="submit" class="btn btn-success">
                                 💾 Simpan Perubahan
                             </button>
-
                         </form>
 
                        <hr class="my-4">
 
-                        <h4 class="fw-bold mb-3">
-                            📄 Riwayat Transaksi
-                        </h4>
+                        <h4 class="fw-bold mb-3">📄 Riwayat Transaksi</h4>
 
                         <div class="table-responsive">
-
                             <table class="table table-hover align-middle">
-
                                 <thead class="table-primary">
-
                                     <tr>
-                                        
                                         <th>No</th>
                                         <th>Tanggal</th>
                                         <th>Nama Kapal</th>
@@ -205,86 +190,42 @@
                                         <th>Harga</th>
                                         <th>Status</th>
                                     </tr>
-
                                 </thead>
-
                                <tbody>
-
                                     <?php if (!empty($negotiations)) : ?>
-
                                         <?php $no = 1; ?>
-
                                         <?php foreach ($negotiations as $row) : ?>
-
                                             <tr>
-
                                                 <td><?= $no++ ?></td>
-
-                                                
-
-                                                <td>
-                                                    <?= date('d M Y', strtotime($row['created_at'])) ?>
-                                                </td>
-
-                                                <td>Kapal #<?= $row['ship_id'] ?></td>
-
+                                                <td><?= date('d M Y', strtotime($row['created_at'])) ?></td>
+                                                <td>Kapal #<?= esc($row['ship_id']) ?></td>
                                                 <td>-</td>
-
                                                 <td>
-
                                                     <?php if ($row['buyer_id'] == session()->get('id')) : ?>
-                                                        <span class="badge bg-success">
-                                                            Pembelian
-                                                        </span>
+                                                        <span class="badge bg-success">Pembelian</span>
                                                     <?php else : ?>
-                                                        <span class="badge bg-warning text-dark">
-                                                            Penjualan
-                                                        </span>
+                                                        <span class="badge bg-warning text-dark">Penjualan</span>
                                                     <?php endif; ?>
-
                                                 </td>
-
+                                                <td>Rp <?= number_format($row['offer_price'], 0, ',', '.') ?></td>
                                                 <td>
-                                                    Rp <?= number_format($row['offer_price'], 0, ',', '.') ?>                           
-
-                                                <td>
-
                                                     <?php if ($row['status'] == 'accepted') : ?>
-                                                        <span class="badge bg-primary">
-                                                            Selesai
-                                                        </span>
-
+                                                        <span class="badge bg-primary">Selesai</span>
                                                     <?php elseif ($row['status'] == 'pending') : ?>
-                                                        <span class="badge bg-secondary">
-                                                            Diproses
-                                                        </span>
-
+                                                        <span class="badge bg-secondary">Diproses</span>
                                                     <?php else : ?>
-                                                        <span class="badge bg-danger">
-                                                            Ditolak
-                                                        </span>
+                                                        <span class="badge bg-danger">Ditolak</span>
                                                     <?php endif; ?>
-
                                                 </td>
-
                                             </tr>
-
                                         <?php endforeach; ?>
-
                                     <?php else : ?>
-
                                         <tr>
-                                            <td colspan="6" class="text-center">
-                                                Belum ada riwayat transaksi.
-                                            </td>
+                                            <td colspan="7" class="text-center">Belum ada riwayat transaksi.</td>
                                         </tr>
-
                                     <?php endif; ?>
-
-                                    </tbody>
-
+                                </tbody>
                             </table>
-
                         </div>
 
                         <?php if (!empty($user['nik'])) : ?>
@@ -295,32 +236,23 @@
                                    value="<?= esc($user['nik']) ?>"
                                    readonly>
                         </div>
-
                         <?php endif; ?>
 
-                        
-
-                        <div style="text-align: center;">
+                        <div style="text-align: center; margin-top: 20px;">
                             <a href="<?= base_url('kategori') ?>" class="btn btn-primary btn-lg">
                                 Jual Kapal
                             </a>
-
                             <a href="<?= base_url('auth/logout') ?>" class="btn btn-danger btn-lg">
                                 Logout
                             </a>
                         </div>
-
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
+<script src="<?= base_url('assets/logis/vendor/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
 </body>
 </html>

@@ -86,6 +86,16 @@ $routes->group('profil', ['namespace' => 'App\Modules\Profil\Controllers'], func
 // Optional temporary route (Ditarik dari GitHub)
 $routes->get('home', 'App\Controllers\Home::index');
 
+$routes->get('/berita', '\App\Modules\Berita\Controllers\Berita::index');
+
+$routes->get(
+    '/berita/(:segment)',
+    '\App\Modules\Berita\Controllers\Berita::detail/$1'
+);
+$routes->get(
+    'berita/(:segment)',
+    '\App\Modules\Berita\Controllers\Berita::detail/$1'
+);
 
 // Route khusus untuk menangani form kontak dari Module Kontak
 $routes->post('kontak/kirim', '\Modules\Kontak\Controllers\Kontak::kirim');
