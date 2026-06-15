@@ -1,0 +1,21 @@
+# 1. Mengabaikan file log dan cache (Ini yang menyelesaikan masalahmu!)
+writable/logs/*
+!writable/logs/index.html
+writable/cache/*
+!writable/cache/index.html
+writable/session/*
+!writable/session/index.html
+writable/uploads/*
+!writable/uploads/index.html
+writable/debugbar/*
+!writable/debugbar/index.html
+
+# 2. Mengabaikan folder vendor dari Composer (Ukurannya sangat besar)
+vendor/
+
+# 3. Mengabaikan file environment lokal (Agar password database tidak bocor)
+.env
+
+# 4. Mengabaikan file sistem bawaan OS (Windows/Mac)
+.DS_Store
+Thumbs.db
