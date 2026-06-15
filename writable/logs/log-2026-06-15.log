@@ -123,3 +123,794 @@ WARNING - 2026-06-15 02:36:42 --> [DEPRECATED] substr(): Passing null to paramet
 11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Tugas-UAS-Pemweb\\public\\index.php')
 DEBUG - 2026-06-15 02:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:46:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:34 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Katalog\Views\form_jual.php"
+[Method: GET, Route: profil/jual-kapal/bulk-carrier]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Katalog\\Views\\form_jual.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Katalog\\Views\\form_jual', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(60): view('App\\Modules\\Katalog\\Views\\form_jual', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->formJual('bulk-carrier')
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\kategori.php"
+[Method: GET, Route: profil/jual-kapal]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\kategori.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\kategori', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(53): view('App\\Modules\\Profil\\Views\\kategori')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->jualKapal()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Beranda\Views\index.php"
+[Method: GET, Route: beranda]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Beranda\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('App\\Modules\\Beranda\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Beranda\Views\index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Beranda\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('App\\Modules\\Beranda\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+INFO - 2026-06-15 02:46:46 --> CSRF token verified.
+DEBUG - 2026-06-15 02:46:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:46:47 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Beranda\Views\index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Beranda\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('App\\Modules\\Beranda\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+INFO - 2026-06-15 02:47:57 --> CSRF token verified.
+DEBUG - 2026-06-15 02:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:47:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Beranda\Views\index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Beranda\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('App\\Modules\\Beranda\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/v_index_beranda.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/v_index_beranda.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/v_index_beranda', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/v_index_beranda', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/v_index_beranda.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/v_index_beranda.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/v_index_beranda', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/v_index_beranda', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:32 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/v_index_beranda.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/v_index_beranda.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/v_index_beranda', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/v_index_beranda', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:38 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/v_index_beranda.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/v_index_beranda.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/v_index_beranda', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/v_index_beranda', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:49 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:50 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:51 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:51:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:52:35 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Modules/Beranda/Views/.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Modules/Beranda/Views/.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('Modules/Beranda/Views/', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('Modules/Beranda/Views/', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:52:42 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Beranda\Views\index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Beranda\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('App\\Modules\\Beranda\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:52:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:52:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Beranda\Views\index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Beranda\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('App\\Modules\\Beranda\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:52:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Beranda\Views\index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Beranda\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('App\\Modules\\Beranda\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:52:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:52:46 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Beranda\Views\index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Beranda\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Beranda\\Views\\index', [], true)
+ 3 APPPATH\Modules\Beranda\Controllers\Beranda.php(25): view('App\\Modules\\Beranda\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Beranda\Controllers\Beranda->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Beranda\Controllers\Beranda))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:54:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 02:54:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\index.php"
+[Method: GET, Route: profil]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\index.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\index', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(34): view('App\\Modules\\Profil\\Views\\index', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 02:58:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:58:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:58:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-15 02:58:51 --> CSRF token verified.
+DEBUG - 2026-06-15 02:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 02:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 03:01:45 --> ErrorException: Undefined array key "npwp"
+[Method: GET, Route: profil]
+in APPPATH\Modules\Profil\Views\v_index_profil.php on line 176.
+ 1 APPPATH\Modules\Profil\Views\v_index_profil.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "npwp"', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php', 176)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\v_index_profil', [], true)
+ 5 APPPATH\Modules\Profil\Controllers\Profil.php(35): view('App\\Modules\\Profil\\Views\\v_index_profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 03:05:27 --> ErrorException: Undefined array key "npwp"
+[Method: GET, Route: profil]
+in APPPATH\Modules\Profil\Views\v_index_profil.php on line 176.
+ 1 APPPATH\Modules\Profil\Views\v_index_profil.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "npwp"', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php', 176)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\v_index_profil', [], true)
+ 5 APPPATH\Modules\Profil\Controllers\Profil.php(35): view('App\\Modules\\Profil\\Views\\v_index_profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:05:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 03:05:27 --> ErrorException: Undefined array key "npwp"
+[Method: GET, Route: profil]
+in APPPATH\Modules\Profil\Views\v_index_profil.php on line 176.
+ 1 APPPATH\Modules\Profil\Views\v_index_profil.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "npwp"', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php', 176)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\v_index_profil', [], true)
+ 5 APPPATH\Modules\Profil\Controllers\Profil.php(35): view('App\\Modules\\Profil\\Views\\v_index_profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:05:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 03:05:30 --> ErrorException: Undefined array key "npwp"
+[Method: GET, Route: profil]
+in APPPATH\Modules\Profil\Views\v_index_profil.php on line 176.
+ 1 APPPATH\Modules\Profil\Views\v_index_profil.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "npwp"', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php', 176)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\v_index_profil', [], true)
+ 5 APPPATH\Modules\Profil\Controllers\Profil.php(35): view('App\\Modules\\Profil\\Views\\v_index_profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 03:05:43 --> ErrorException: Undefined array key "npwp"
+[Method: GET, Route: profil]
+in APPPATH\Modules\Profil\Views\v_index_profil.php on line 176.
+ 1 APPPATH\Modules\Profil\Views\v_index_profil.php(176): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "npwp"', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php', 176)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Profil\\Views\\v_index_profil.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\v_index_profil', [], true)
+ 5 APPPATH\Modules\Profil\Controllers\Profil.php(35): view('App\\Modules\\Profil\\Views\\v_index_profil', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:10:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:10:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-15 03:11:24 --> CSRF token verified.
+DEBUG - 2026-06-15 03:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-15 03:11:31 --> CSRF token verified.
+DEBUG - 2026-06-15 03:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-15 03:11:36 --> CSRF token verified.
+DEBUG - 2026-06-15 03:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:11:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:12:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-15 03:12:10 --> CSRF token verified.
+DEBUG - 2026-06-15 03:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:12:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-15 03:12:18 --> CSRF token verified.
+DEBUG - 2026-06-15 03:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-15 03:12:30 --> CSRF token verified.
+DEBUG - 2026-06-15 03:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2026-06-15 03:12:43 --> CSRF token verified.
+DEBUG - 2026-06-15 03:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:13:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 03:13:44 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\kategori.php"
+[Method: GET, Route: profil/jual-kapal]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\kategori.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\kategori', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(52): view('App\\Modules\\Profil\\Views\\kategori')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->jualKapal()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:13:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 03:13:48 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\kategori.php"
+[Method: GET, Route: profil/jual-kapal]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\kategori.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\kategori', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(52): view('App\\Modules\\Profil\\Views\\kategori')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->jualKapal()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:19:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:19:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 03:19:02 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "App\Modules\Profil\Views\kategori.php"
+[Method: GET, Route: profil/jual-kapal]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('App\\Modules\\Profil\\Views\\kategori.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Profil\\Views\\kategori', [], true)
+ 3 APPPATH\Modules\Profil\Controllers\Profil.php(52): view('App\\Modules\\Profil\\Views\\kategori')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Profil\Controllers\Profil->jualKapal()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Profil\Controllers\Profil))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:19:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:23:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:27:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-06-15 03:27:16 --> Table 'marketplace_kapal.kategori_kapal' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `kategori_kapal`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kategori_kapal`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kategori_kapal`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_kapal`', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Modules\Kategori\Controllers\Kategori.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Kategori\Controllers\Kategori->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Kategori\Controllers\Kategori))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+CRITICAL - 2026-06-15 03:27:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'marketplace_kapal.kategori_kapal' doesn't exist
+[Method: GET, Route: kategori]
+in SYSTEMPATH\Database\BaseConnection.php on line 865.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_kapal`', [], false)
+ 2 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Modules\Kategori\Controllers\Kategori.php(21): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Kategori\Controllers\Kategori->index()
+ 6 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Kategori\Controllers\Kategori))
+ 7 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+CRITICAL - 2026-06-15 03:27:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'marketplace_kapal.kategori_kapal' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 310.
+ 1 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kategori_kapal`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kategori_kapal`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_kapal`', [], false)
+ 4 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Modules\Kategori\Controllers\Kategori.php(21): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Kategori\Controllers\Kategori->index()
+ 8 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Kategori\Controllers\Kategori))
+ 9 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+CRITICAL - 2026-06-15 03:27:16 --> [Caused by] mysqli_sql_exception: Table 'marketplace_kapal.kategori_kapal' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 300.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(300): mysqli->query('SELECT *
+FROM `kategori_kapal`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(910): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kategori_kapal`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(827): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kategori_kapal`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kategori_kapal`', [], false)
+ 5 SYSTEMPATH\Model.php(253): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(676): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Modules\Kategori\Controllers\Kategori.php(21): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Kategori\Controllers\Kategori->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Kategori\Controllers\Kategori))
+10 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:30:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 03:30:15 --> ErrorException: Undefined array key "slug_kategori"
+[Method: GET, Route: kategori]
+in APPPATH\Modules\Kategori\Views\v_index_kategori.php on line 37.
+ 1 APPPATH\Modules\Kategori\Views\v_index_kategori.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "slug_kategori"', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Kategori\\Views\\v_index_kategori.php', 37)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Kategori\\Views\\v_index_kategori.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Kategori\\Views\\v_index_kategori', [], true)
+ 5 APPPATH\Modules\Kategori\Controllers\Kategori.php(25): view('App\\Modules\\Kategori\\Views\\v_index_kategori', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Kategori\Controllers\Kategori->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Kategori\Controllers\Kategori))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 03:32:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 03:35:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

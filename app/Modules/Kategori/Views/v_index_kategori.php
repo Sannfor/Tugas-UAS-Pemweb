@@ -34,8 +34,13 @@
                     <tr>
                         <td><?= $i++; ?></td>
                         <td><strong><?= esc($k['nama_kategori']); ?></strong></td>
-                        <td><code><?= esc($k['slug_kategori']); ?></code></td>
-                        <td><?= esc($k['deskripsi']); ?></td>
+                        <td>
+                            <code><?= esc($k['slug'] ?? '-') ?></code>
+                        </td>
+
+                        <td>
+                            <?= esc($k['deskripsi'] ?? '-') ?>
+                        </td>
                         <td>
                             <button class="btn btn-sm btn-warning">Edit</button>
                             <button class="btn btn-sm btn-danger">Hapus</button>

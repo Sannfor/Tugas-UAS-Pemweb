@@ -22,6 +22,6 @@ class Beranda extends BaseController
             'kapal_passenger' => $passengerShipModel->where('status', 'available')->findAll() // Panggil datanya
         ];
 
-        return view('App\Modules\Beranda\Views\index', $data);
+        return view('App\Modules\Beranda\Views\v_index_beranda', $data);
     }
 }

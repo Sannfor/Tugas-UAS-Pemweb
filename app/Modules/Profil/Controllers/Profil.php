@@ -4,6 +4,7 @@ namespace App\Modules\Profil\Controllers;
 
 use App\Controllers\BaseController;
 use App\Modules\Transaksi\Models\NegotiationModel;
+ use App\Modules\Auth\Models\AuthModel;
 
 
 class Profil extends BaseController
@@ -12,9 +13,13 @@ class Profil extends BaseController
 {
     $session = session();
 
-    $negotiationModel = new NegotiationModel();
-
     $userId = $session->get('id');
+
+    $userModel = new AuthModel();
+
+    $user = $userModel->find($userId);
+
+    $negotiationModel = new NegotiationModel();
 
     $negotiations = $negotiationModel
         ->where('buyer_id', $userId)
@@ -22,16 +27,10 @@ class Profil extends BaseController
         ->orderBy('created_at', 'DESC')
         ->findAll();
 
-    $data['user'] = [
-        'nama'  => $session->get('nama'),
-        'email' => $session->get('email'),
-        'role'  => $session->get('role'),
-        'nik'   => $session->get('nik')
-    ];
-
+    $data['user'] = $user;
     $data['negotiations'] = $negotiations;
 
-    return view('App\Modules\Profil\Views\index', $data);
+    return view('App\Modules\Profil\Views\v_index_profil', $data);
 }
 
     public function transaksi()
@@ -57,6 +56,26 @@ class Profil extends BaseController
     {
         $data['kategori'] = $kategori;
 
-        return view('App\Modules\Katalog\Views\form_jual', $data);
+        return view('app/Modules/Produk/Views/v_form_jual_produk.php', $data);
+    }
+
+   
+
+    public function updateProfil()
+    {
+        $userModel = new AuthModel();
+
+        $userId = session()->get('id');
+
+        $userModel->update($userId, [
+            'npwp'              => $this->request->getPost('npwp'),
+            'no_bank'           => $this->request->getPost('no_bank'),
+            'domisili_pelabuhan'=> $this->request->getPost('domisili_pelabuhan')
+        ]);
+
+        return redirect()->back()->with(
+            'success',
+            'Profil berhasil diperbarui.'
+        );
     }
 }

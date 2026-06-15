@@ -147,6 +147,42 @@
                                    readonly>
                         </div>
 
+                        <form action="<?= base_url('profil/update') ?>"
+                            method="post">
+
+                            <?= csrf_field() ?>
+
+                            <div class="mb-3">
+                                <label>NPWP</label>
+                                <input type="text"
+                                    name="npwp"
+                                    class="form-control"
+                                    value="<?= $user['npwp'] ?? '' ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>No Rekening</label>
+                                <input type="text"
+                                    name="no_bank"
+                                    class="form-control"
+                                    value="<?= $user['no_bank'] ?? '' ?>">
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Domisili Pelabuhan</label>
+                                <input type="text"
+                                    name="domisili_pelabuhan"
+                                    class="form-control"
+                                    value="<?= $user['domisili_pelabuhan'] ?? '' ?>">
+                            </div>
+
+                            <button type="submit"
+                                    class="btn btn-success">
+                                💾 Simpan Perubahan
+                            </button>
+
+                        </form>
+
                        <hr class="my-4">
 
                         <h4 class="fw-bold mb-3">
@@ -265,11 +301,11 @@
                         
 
                         <div style="text-align: center;">
-                            <a href="<?= base_url('profil/jual-kapal') ?>" class="btn btn-primary btn-lg">
+                            <a href="<?= base_url('kategori') ?>" class="btn btn-primary btn-lg">
                                 Jual Kapal
                             </a>
 
-                            <a href="<?= base_url('logout') ?>" class="btn btn-danger btn-lg">
+                            <a href="<?= base_url('auth/logout') ?>" class="btn btn-danger btn-lg">
                                 Logout
                             </a>
                         </div>

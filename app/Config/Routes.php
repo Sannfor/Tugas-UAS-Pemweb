@@ -56,6 +56,21 @@ $routes->get('supplier', '\App\Modules\Supplier\Controllers\Supplier::index');
 $routes->get('profil', '\App\Modules\Profil\Controllers\Profil::index');
 $routes->get('beranda', '\App\Modules\Beranda\Controllers\Beranda::index');
 
+$routes->get(
+    'produk/jual',
+    '\App\Modules\Produk\Controllers\Produk::form_jual'
+);
+
+$routes->get(
+    'produk/jual/(:segment)',
+    '\App\Modules\Produk\Controllers\Produk::form_jual/$1'
+);
+
+$routes->get(
+    'kategori',
+    '\App\Modules\Kategori\Controllers\Kategori::index'
+);
+
 $routes->post('katalog/simpan', 'Katalog::simpan');
 $routes->group('profil', ['namespace' => 'App\Modules\Profil\Controllers'], function($routes){
 
@@ -64,10 +79,13 @@ $routes->group('profil', ['namespace' => 'App\Modules\Profil\Controllers'], func
     $routes->get('jual-kapal', 'Profil::jualKapal');
     $routes->get('jual-kapal/(:segment)', 'Profil::formJual/$1');
 
+    $routes->post('update', 'Profil::updateProfil');
+
 });
 
 // Optional temporary route (Ditarik dari GitHub)
 $routes->get('home', 'App\Controllers\Home::index');
+
 
 // Route khusus untuk menangani form kontak dari Module Kontak
 $routes->post('kontak/kirim', '\Modules\Kontak\Controllers\Kontak::kirim');
