@@ -83,9 +83,9 @@
           <!-- Dropdown Menu Informasi -->
           <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-             <li>
+              <li>
                 <a href="<?= base_url('berita') ?>">Berita</a>
-            </li>
+              </li>
               <li><a href="#laporan">Laporan</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
@@ -185,38 +185,35 @@
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-screwdriver-wrench"></i></div>
             <div>
-              <h4 class="title">Lorem Ipsum</h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <h4 class="title">Layanan Maritim</h4>
+              <p class="description">Jelajahi berbagai layanan pendukung operasional maritim Anda, mulai dari inspeksi kapal, perizinan legal, hingga asuransi armada.</p>
+              <a href="#layanan" class="readmore stretched-link"><span>Jelajahi Layanan</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
-          <!-- End Service Item -->
-
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-ship"></i></div>
             <div>
-              <h4 class="title">Dolor Sitema</h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <h4 class="title">Katalog Kapal</h4>
+              <p class="description">Temukan berbagai armada komersial berkualitas tinggi seperti Bulk Carrier, Tugboat, dan Kapal Penumpang yang siap beroperasi.</p>
+              <a href="#produk" class="readmore stretched-link"><span>Lihat Katalog</span><i class="bi bi-arrow-right"></i></a>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
           <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-headset"></i></div>
             <div>
-              <h4 class="title">Sed ut perspiciatis</h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              <h4 class="title">Pusat Bantuan</h4>
+              <p class="description">Punya pertanyaan soal spesifikasi atau butuh bantuan negosiasi? Tim dukungan ahli kami siap melayani Anda 24/7.</p>
+              <a href="#contact" class="readmore stretched-link"><span>Hubungi Kami</span><i class="bi bi-arrow-right"></i></a>
             </div>
-          </div><!-- End Service Item -->
-
+          </div>
         </div>
 
       </div>
 
-    </section><!-- /Featured Services Section -->
+    </section>
+    <!-- /Featured Services Section -->
 
     <!-- Tentang Section -->
     <section id="tentangkami" class="team section-bg" style="padding: 60px 0;">

@@ -1,3 +1,9 @@
+<?php
+
+/**
+ * @var array $kategori
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +14,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="<?= base_url('assets/logis/css/main.css') ?>" rel="stylesheet">
+    <link href="<?= base_url('assets/logis/vendor/bootstrap-icons/bootstrap-icons.css') ?>" rel="stylesheet">
 
     <style>
         body {
@@ -65,41 +72,43 @@
             background: #bb2d3b;
             color: white;
         }
+
     </style>
 </head>
 
 <body>
 
-<header id="header" class="header d-flex align-items-center fixed-top">
+<header id="header" class="header d-flex align-items-center fixed-top" style="background-color: #0e1d34; padding: 15px 0; box-shadow: 0 2px 15px rgba(0,0,0,0.1);">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
+      
       <a href="<?= base_url() ?>" class="logo d-flex align-items-center me-auto">
-        <img src="<?= base_url('assets/images/drydock-logo-2w.png') ?>" alt="Drydock Logo" style="max-height: 140px;">
+        <img src="<?= base_url('assets/images/drydock-logo-2w.png') ?>" alt="Drydock Logo" style="max-height: 80px;">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="<?= base_url('beranda') ?>" >Beranda</a></li>
-          <li><a href="#tentangkami">Tentang Kami</a></li>
-          <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#produk">Katalog</a></li>
-
-          <!-- Dropdown Menu Informasi -->
+          <li><a href="<?= base_url('beranda') ?>">Beranda</a></li>
+          <li><a href="<?= base_url('beranda#tentangkami') ?>">Tentang Kami</a></li>
+          <li><a href="<?= base_url('beranda#layanan') ?>">Layanan</a></li>
+          <li><a href="<?= base_url('beranda#produk') ?>">Katalog</a></li>
+          
           <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <a href="<?= base_url('berita') ?>">Berita</a>
-              <li><a href="#laporan">Laporan</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li><a href="<?= base_url('beranda#berita') ?>">Berita</a></li>
+              <li><a href="<?= base_url('beranda#laporan') ?>">Laporan</a></li>
+              <li><a href="<?= base_url('beranda#faq') ?>">FAQ</a></li>
             </ul>
           </li>
 
-          <li><a href="#contact">Kontak</a></li>
+          <li><a href="<?= base_url('beranda#contact') ?>">Kontak</a></li>
           <li><a href="<?= base_url('profil') ?>" class="active">Profil</a></li>
-
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      
     </div>
-  </header>
+</header>
+
 <section class="profile-section">
     <div class="container">
         <div class="row justify-content-center">
