@@ -1531,3 +1531,125 @@ DEBUG - 2026-06-15 14:15:58 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-06-15 14:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-15 14:16:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-06-15 14:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 15:12:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 15:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 15:12:28 --> ErrorException: Undefined property: App\Modules\Laporan\Controllers\Laporan::$kapalModel
+[Method: GET, Route: laporan]
+in APPPATH\Modules\Laporan\Controllers\Laporan.php on line 29.
+ 1 APPPATH\Modules\Laporan\Controllers\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\Laporan\\Controllers\\Laporan::$kapalModel', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Controllers\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Laporan\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Laporan\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 15:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 15:17:20 --> ErrorException: Undefined property: App\Modules\Laporan\Controllers\Laporan::$kapalModel
+[Method: GET, Route: laporan]
+in APPPATH\Modules\Laporan\Controllers\Laporan.php on line 29.
+ 1 APPPATH\Modules\Laporan\Controllers\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\Laporan\\Controllers\\Laporan::$kapalModel', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Controllers\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Laporan\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Laporan\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 15:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 15:17:21 --> ErrorException: Undefined property: App\Modules\Laporan\Controllers\Laporan::$kapalModel
+[Method: GET, Route: laporan]
+in APPPATH\Modules\Laporan\Controllers\Laporan.php on line 29.
+ 1 APPPATH\Modules\Laporan\Controllers\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\Laporan\\Controllers\\Laporan::$kapalModel', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Controllers\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Laporan\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Laporan\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 15:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 15:17:22 --> ErrorException: Undefined property: App\Modules\Laporan\Controllers\Laporan::$kapalModel
+[Method: GET, Route: laporan]
+in APPPATH\Modules\Laporan\Controllers\Laporan.php on line 29.
+ 1 APPPATH\Modules\Laporan\Controllers\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\Laporan\\Controllers\\Laporan::$kapalModel', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Controllers\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Laporan\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Laporan\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 15:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 15:17:22 --> ErrorException: Undefined property: App\Modules\Laporan\Controllers\Laporan::$kapalModel
+[Method: GET, Route: laporan]
+in APPPATH\Modules\Laporan\Controllers\Laporan.php on line 29.
+ 1 APPPATH\Modules\Laporan\Controllers\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\Laporan\\Controllers\\Laporan::$kapalModel', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Controllers\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Laporan\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Laporan\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 15:17:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 15:17:22 --> ErrorException: Undefined property: App\Modules\Laporan\Controllers\Laporan::$kapalModel
+[Method: GET, Route: laporan]
+in APPPATH\Modules\Laporan\Controllers\Laporan.php on line 29.
+ 1 APPPATH\Modules\Laporan\Controllers\Laporan.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Modules\\Laporan\\Controllers\\Laporan::$kapalModel', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Controllers\\Laporan.php', 29)
+ 2 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Laporan\Controllers\Laporan->index()
+ 3 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Laporan\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+CRITICAL - 2026-06-15 15:19:48 --> ParseError: syntax error, unexpected token "protected", expecting end of file
+[Method: GET, Route: laporan]
+in APPPATH\Modules\Laporan\Controllers\Laporan.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Controllers\\Laporan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Modules\\Laporan\\Controllers\\Laporan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Modules\\Laporan\\Controllers\\Laporan')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Modules\\Laporan\\Controllers\\Laporan')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('laporan')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 15:19:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 15:19:54 --> ParseError: syntax error, unexpected token "protected", expecting end of file
+[Method: GET, Route: laporan]
+in APPPATH\Modules\Laporan\Controllers\Laporan.php on line 10.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(295): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Controllers\\Laporan.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(271): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Modules\\Laporan\\Controllers\\Laporan')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Modules\\Laporan\\Controllers\\Laporan')
+ 4 SYSTEMPATH\Router\Router.php(792): class_exists('\\App\\Modules\\Laporan\\Controllers\\Laporan')
+ 5 SYSTEMPATH\Router\Router.php(230): CodeIgniter\Router\Router->processRouteAttributes()
+ 6 SYSTEMPATH\CodeIgniter.php(829): CodeIgniter\Router\Router->handle('laporan')
+ 7 SYSTEMPATH\CodeIgniter.php(441): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 15:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-06-15 15:20:58 --> ErrorException: Undefined array key "status"
+[Method: GET, Route: laporan]
+in APPPATH\Modules\Laporan\Views\v_index_laporan.php on line 166.
+ 1 APPPATH\Modules\Laporan\Views\v_index_laporan.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Views\\v_index_laporan.php', 166)
+ 2 SYSTEMPATH\View\View.php(240): include('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\app\\Modules\\Laporan\\Views\\v_index_laporan.php')
+ 3 SYSTEMPATH\View\View.php(243): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('App\\Modules\\Laporan\\Views\\v_index_laporan', [], true)
+ 5 APPPATH\Modules\Laporan\Controllers\Laporan.php(56): view('App\\Modules\\Laporan\\Views\\v_index_laporan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(951): App\Modules\Laporan\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Modules\Laporan\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('D:\\code_vc\\CI\\Tugas-UAS-Pemweb\\public\\index.php')
+DEBUG - 2026-06-15 15:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-06-15 15:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

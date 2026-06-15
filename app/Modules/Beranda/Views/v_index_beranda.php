@@ -86,7 +86,7 @@
               <li>
                 <a href="<?= base_url('berita') ?>">Berita</a>
               </li>
-              <li><a href="#laporan">Laporan</a></li>
+              <li><a href="<?= base_url('laporan') ?>">Laporan</a></li>
               <li><a href="#faq">FAQ</a></li>
             </ul>
           </li>

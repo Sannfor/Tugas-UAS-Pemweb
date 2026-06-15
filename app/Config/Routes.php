@@ -82,7 +82,17 @@ $routes->group('profil', ['namespace' => 'App\Modules\Profil\Controllers'], func
     $routes->post('update', 'Profil::updateProfil');
 
 });
+// Laporan
+$routes->get(
+    'laporan',
+    '\App\Modules\Laporan\Controllers\Laporan::index'
+);
 
+$routes->get(
+    'laporan/cetak',
+    '\App\Modules\Laporan\Controllers\Laporan::cetak'
+);
+$routes->get('laporan', '\App\Modules\Laporan\Controllers\Laporan::index');
 // Optional temporary route (Ditarik dari GitHub)
 $routes->get('home', 'App\Controllers\Home::index');
 
