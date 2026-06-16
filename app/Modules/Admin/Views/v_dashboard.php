@@ -52,106 +52,336 @@
 </head>
 <body>
 
-    <div class="sidebar">
-        <div class="brand">
-            <i class="bi bi-ship"></i> Drydock Admin
-        </div>
-        <a href="<?= base_url('admin') ?>" class="active"><i class="bi bi-speedometer2"></i> Dasbor</a>
-        <a href="<?= base_url('admin/pengguna') ?>"><i class="bi bi-people"></i> Kelola Pengguna</a>
-        <a href="<?= base_url('admin/supplier') ?>"><i class="bi bi-building"></i> Kelola Supplier</a> <a href="<?= base_url('admin/produk') ?>"><i class="bi bi-box-seam"></i> Kelola Produk</a>
-        <a href="<?= base_url('admin/kategori') ?>"><i class="bi bi-tags"></i> Kategori Kapal</a>
-        <a href="<?= base_url('penjualan') ?>"><i class="bi bi-cart-check"></i> Transaksi Penjualan</a>
-        
-        <div style="position: absolute; bottom: 20px; width: 100%;">
-            <a href="<?= base_url('auth/logout') ?>" class="text-danger"><i class="bi bi-box-arrow-left"></i> Logout</a>
+<div class="sidebar">
+    <div class="brand">
+        <i class="bi bi-ship"></i> Drydock Admin
+    </div>
+
+    <a href="<?= base_url('admin') ?>" class="active">
+        <i class="bi bi-speedometer2"></i> Dasbor
+    </a>
+
+    <a href="<?= base_url('admin/pengguna') ?>">
+        <i class="bi bi-people"></i> Kelola Pengguna
+    </a>
+
+    <a href="<?= base_url('admin/supplier') ?>">
+        <i class="bi bi-building"></i> Kelola Supplier
+    </a>
+
+    <a href="<?= base_url('admin/produk') ?>">
+        <i class="bi bi-box-seam"></i> Kelola Produk
+    </a>
+
+    <a href="<?= base_url('admin/kategori') ?>">
+        <i class="bi bi-tags"></i> Kategori Kapal
+    </a>
+
+    <a href="<?= base_url('penjualan') ?>">
+        <i class="bi bi-cart-check"></i> Transaksi Penjualan
+    </a>
+
+    <div style="position:absolute; bottom:20px; width:100%;">
+        <a href="<?= base_url('auth/logout') ?>" class="text-danger">
+            <i class="bi bi-box-arrow-left"></i> Logout
+        </a>
+    </div>
+</div>
+
+<div class="main-content">
+
+    <div class="topbar">
+        <h4 class="mb-0 text-dark">Ringkasan Dasbor</h4>
+
+        <div class="d-flex align-items-center">
+            <span class="me-3 fw-bold">
+                Halo, <?= esc($user['nama'] ?? 'Admin') ?>!
+            </span>
+
+            <div style="
+                width:40px;
+                height:40px;
+                background:#0d6efd;
+                color:white;
+                border-radius:50%;
+                display:flex;
+                align-items:center;
+                justify-content:center;
+                font-weight:bold;
+            ">
+                <?= strtoupper(substr($user['nama'] ?? 'A',0,1)) ?>
+            </div>
         </div>
     </div>
 
-    <div class="main-content">
-        <div class="topbar">
-            <h4 class="mb-0 text-dark">Ringkasan Dasbor</h4>
-            <div class="d-flex align-items-center">
-                <span class="me-3 fw-bold">Halo, <?= esc($user['nama'] ?? 'Admin') ?>!</span>
-                <div style="width: 40px; height: 40px; background: #0d6efd; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold;">
-                    <?= strtoupper(substr($user['nama'] ?? 'A', 0, 1)) ?>
-                </div>
+    <!-- Statistik -->
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <div class="stat-card">
+                <h6 class="text-muted">Total Pengguna Aktif</h6>
+                <h2 class="fw-bold"><?= $total_pengguna ?></h2>
             </div>
         </div>
 
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="stat-card">
-                    <h6 class="text-muted">Total Pengguna Aktif</h6>
-                    <h2 class="mb-0 text-dark fw-bold"><?= $total_pengguna ?></h2>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="stat-card success">
-                    <h6 class="text-muted">Total Produk (Kapal)</h6>
-                    <h2 class="mb-0 text-dark fw-bold"><?= $total_produk ?></h2>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="stat-card warning">
-                    <h6 class="text-muted">Kapal Terjual</h6>
-                    <h2 class="mb-0 text-dark fw-bold"><?= $total_terjual ?></h2>
-                </div>
+        <div class="col-md-3">
+            <div class="stat-card success">
+                <h6 class="text-muted">
+                    Total Supplier
+                </h6>
+
+                <h2 class="fw-bold">
+                    <?= $total_supplier ?>
+                </h2>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="chart-container">
-                    <h5 class="mb-4">Trafik Laporan Penjualan (6 Bulan Terakhir)</h5>
-                    <canvas id="salesChart" height="100"></canvas>
-                </div>
+        <div class="col-md-4">
+            <div class="stat-card success">
+                <h6 class="text-muted">Total Produk</h6>
+                <h2 class="fw-bold"><?= $total_produk ?></h2>
             </div>
-            <div class="col-lg-4">
-                <div class="chart-container">
-                    <h5 class="mb-4">Status Transaksi</h5>
-                    <ul class="list-group list-group-flush mt-3">
-                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
-                            Menunggu Konfirmasi <span class="badge bg-warning rounded-pill">14</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
-                            Dalam Proses Negosiasi <span class="badge bg-info rounded-pill">2</span>
-                        </li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-2">
-                            Transaksi Selesai <span class="badge bg-success rounded-pill">123</span>
-                        </li>
-                    </ul>
-                </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="stat-card warning">
+                <h6 class="text-muted">Kapal Terjual</h6>
+                <h2 class="fw-bold"><?= $total_terjual ?></h2>
             </div>
         </div>
 
     </div>
 
-    <script>
-        const ctx = document.getElementById('salesChart').getContext('2d');
-        const salesChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: <?= $bulan_grafik ?>, // Data dari Controller
-                datasets: [{
-                    label: 'Jumlah Kapal Terjual',
-                    data: <?= $data_penjualan ?>, // Data dari Controller
-                    backgroundColor: 'rgba(13, 110, 253, 0.2)',
-                    borderColor: 'rgba(13, 110, 253, 1)',
-                    borderWidth: 2,
-                    tension: 0.4, // Membuat garis melengkung halus
-                    fill: true
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: { display: false }
-                },
-                scales: {
-                    y: { beginAtZero: true }
-                }
+    <!-- Grafik Utama -->
+    <div class="row mt-4">
+
+        <div class="col-lg-8">
+            <div class="chart-container">
+                <h5 class="mb-4">
+                    Trafik Penjualan 6 Bulan Terakhir
+                </h5>
+
+                <canvas id="salesChart"></canvas>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="chart-container">
+
+                <h5 class="mb-4">
+                    Status Transaksi
+                </h5>
+
+                <ul class="list-group list-group-flush">
+
+                    <li class="list-group-item d-flex justify-content-between">
+                        Menunggu Konfirmasi
+                        <span class="badge bg-warning rounded-pill">
+                            14
+                        </span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between">
+                        Negosiasi
+                        <span class="badge bg-info rounded-pill">
+                            2
+                        </span>
+                    </li>
+
+                    <li class="list-group-item d-flex justify-content-between">
+                        Selesai
+                        <span class="badge bg-success rounded-pill">
+                            123
+                        </span>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Grafik Batang + Top Buyer -->
+    <div class="row mt-4">
+
+        <div class="col-lg-6">
+
+            <div class="chart-container">
+
+                <h5 class="mb-4">
+                    Penjualan Bulanan
+                </h5>
+
+                <canvas id="barChart"></canvas>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+            <div class="chart-container">
+
+                <h5 class="mb-4">
+                    Top 5 Pembeli
+                </h5>
+
+                <table class="table table-hover">
+
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nama</th>
+                            <th>Total Transaksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                    <?php if(!empty($top_buyers)): ?>
+
+                        <?php foreach($top_buyers as $i => $buyer): ?>
+
+                            <tr>
+                                <td><?= $i + 1 ?></td>
+                                <td><?= esc($buyer['nama']) ?></td>
+                                <td><?= esc($buyer['total_transaksi']) ?></td>
+                            </tr>
+
+                        <?php endforeach; ?>
+
+                    <?php else: ?>
+
+                        <tr>
+                            <td colspan="3" class="text-center">
+                                Belum ada data
+                            </td>
+                        </tr>
+
+                    <?php endif; ?>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+// LINE CHART
+const ctx = document.getElementById('salesChart').getContext('2d');
+
+new Chart(ctx, {
+
+    type: 'line',
+
+    data: {
+
+        labels: <?= $bulan_grafik ?>,
+
+        datasets: [{
+
+            label: 'Jumlah Kapal Terjual',
+
+            data: <?= $data_penjualan ?>,
+
+            backgroundColor: 'rgba(13,110,253,0.15)',
+
+            borderColor: '#0d6efd',
+
+            borderWidth: 3,
+
+            fill: true,
+
+            tension: 0.4,
+
+            pointRadius: 5
+
+        }]
+
+    },
+
+    options: {
+
+        responsive: true,
+
+        plugins: {
+            legend: {
+                display: false
             }
-        });
-    </script>
+        },
+
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+
+    }
+
+});
+
+
+// BAR CHART
+const barCtx = document.getElementById('barChart').getContext('2d');
+
+new Chart(barCtx, {
+
+    type: 'bar',
+
+    data: {
+
+        labels: <?= $bulan_grafik ?>,
+
+        datasets: [{
+
+            label: 'Kapal Terjual',
+
+            data: <?= $data_penjualan ?>,
+
+            backgroundColor: [
+                '#0d6efd',
+                '#198754',
+                '#ffc107',
+                '#dc3545',
+                '#6f42c1',
+                '#20c997'
+            ],
+
+            borderRadius: 8
+
+        }]
+
+    },
+
+    options: {
+
+        responsive: true,
+
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+
+    }
+
+});
+
+</script>
+
 </body>
 </html>

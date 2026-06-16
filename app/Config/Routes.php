@@ -28,6 +28,20 @@ $routes->group('auth', ['namespace' => 'App\Modules\Auth\Controllers'], function
     $routes->post('update-forgot-password', 'Auth::updateForgotPassword');
 });
 
+$routes->group('admin', ['namespace' => 'App\Modules\Admin\Controllers'], function($routes) {
+
+    $routes->get('/', 'Admin::index');
+
+    $routes->get('pengguna', 'Admin::pengguna');
+    $routes->get('pengguna/detail/(:num)', 'Admin::detailPengguna/$1');
+    $routes->get('pengguna/hapus/(:num)', 'Admin::hapusPengguna/$1');
+
+    $routes->get('supplier', 'Admin::supplier');
+    $routes->get('supplier/detail/(:num)', 'Admin::detailSupplier/$1');
+    $routes->get('supplier/produk/(:num)', 'Admin::produkSupplier/$1');
+
+});
+
 // --------------------------------------------------------------------
 // 3. Rute Dashboard & Admin
 // --------------------------------------------------------------------
