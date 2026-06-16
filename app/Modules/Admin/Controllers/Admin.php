@@ -33,6 +33,10 @@ class Admin extends BaseController
             +
             $db->table('tugboats')->countAllResults();
 
+            // Total Kategori
+        $total_kategori = $db->table('kategori_kapal')
+            ->countAllResults();
+
         // Kapal Terjual
         $total_terjual = $db->table('transactions')
             ->where('status', 'completed')
@@ -83,6 +87,8 @@ class Admin extends BaseController
             'total_supplier' => $total_supplier,
 
             'total_produk' => $total_produk,
+
+            'total_kategori' => $total_kategori,
 
             'total_terjual' => $total_terjual,
 

@@ -73,10 +73,6 @@
         <i class="bi bi-box-seam"></i> Kelola Produk
     </a>
 
-    <a href="<?= base_url('admin/kategori') ?>">
-        <i class="bi bi-tags"></i> Kategori Kapal
-    </a>
-
     <a href="<?= base_url('penjualan') ?>">
         <i class="bi bi-cart-check"></i> Transaksi Penjualan
     </a>
@@ -149,6 +145,14 @@
                 <h2 class="fw-bold"><?= $total_terjual ?></h2>
             </div>
         </div>
+
+        <div class="col-md-4">
+            <div class="stat-card warning">
+                <h6 class="text-muted">Jumlah Kategori</h6>
+                <h2 class="fw-bold"><?= $total_kategori ?></h2>
+            </div>
+        </div>
+        
 
     </div>
 

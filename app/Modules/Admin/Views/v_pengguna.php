@@ -65,10 +65,6 @@
         <i class="bi bi-box-seam"></i> Kelola Produk
     </a>
 
-    <a href="<?= base_url('admin/kategori') ?>">
-        <i class="bi bi-tags"></i> Kategori Kapal
-    </a>
-
     <a href="<?= base_url('penjualan') ?>">
         <i class="bi bi-cart-check"></i> Transaksi Penjualan
     </a>

@@ -11,109 +11,68 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
 <style>
-    body{
-        background-color:#f4f7fc;
-        font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
-    }
-
-    .sidebar{
-        height:100vh;
-        width:250px;
-        position:fixed;
-        top:0;
-        left:0;
-        background:#0e1d34;
-        padding-top:20px;
-    }
-
-    .sidebar .brand{
-        padding:15px 25px;
-        font-size:1.5rem;
-        font-weight:bold;
-        color:#fff;
-        border-bottom:1px solid rgba(255,255,255,.1);
-        margin-bottom:20px;
-    }
-
-    .sidebar a{
-        padding:12px 25px;
-        text-decoration:none;
-        display:block;
-        color:rgba(255,255,255,.7);
-    }
-
-    .sidebar a:hover,
-    .sidebar a.active{
-        background:rgba(255,255,255,.1);
-        color:#fff;
-        border-left:4px solid #0d6efd;
-    }
-
-    .main-content{
-        margin-left:250px;
-        padding:30px;
-    }
-
-    .page-card{
-        background:#fff;
-        border-radius:12px;
-        box-shadow:0 2px 10px rgba(0,0,0,.05);
-        padding:25px;
-    }
-
-    .supplier-avatar{
-        width:45px;
-        height:45px;
-        border-radius:50%;
-        background:#0d6efd;
-        color:#fff;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        font-weight:bold;
-    }
-</style>
+        body { background-color: #f4f7fc; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        /* Sidebar Styles */
+        .sidebar {
+            height: 100vh;
+            width: 250px;
+            position: fixed;
+            top: 0; left: 0;
+            background-color: #0e1d34;
+            padding-top: 20px;
+            color: #fff;
+            transition: all 0.3s;
+        }
+        .sidebar .brand { padding: 15px 25px; font-size: 1.5rem; font-weight: bold; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px; }
+        .sidebar a {
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 1rem;
+            color: rgba(255,255,255,0.7);
+            display: block;
+            transition: 0.3s;
+        }
+        .sidebar a:hover, .sidebar a.active { background-color: rgba(255,255,255,0.1); color: #fff; border-left: 4px solid #0d6efd; }
+        .sidebar i { margin-right: 10px; }
+        
+        /* Main Content Styles */
+        .main-content { margin-left: 250px; padding: 30px; }
+        .topbar { background: #fff; padding: 15px 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; }
+        .stat-card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 5px solid #0d6efd; }
+        .stat-card.success { border-left-color: #198754; }
+        .stat-card.warning { border-left-color: #ffc107; }
+        .chart-container { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-top: 30px; }
+    </style>
  
 
 </head>
 <body>
 
 <div class="sidebar">
+    <div class="brand">
+        <i class="bi bi-ship"></i> Drydock Admin
+    </div>
 
- 
-<div class="brand">
-    <i class="bi bi-ship"></i> Drydock Admin
-</div>
+    <a href="<?= base_url('admin') ?>" >
+        <i class="bi bi-speedometer2"></i> Dasbor
+    </a>
 
-<a href="<?= base_url('admin') ?>">
-    <i class="bi bi-speedometer2"></i>
-    Dasbor
-</a>
+    <a href="<?= base_url('admin/pengguna') ?>" >
+        <i class="bi bi-people"></i> Kelola Pengguna
+    </a>
 
-<a href="<?= base_url('admin/pengguna') ?>">
-    <i class="bi bi-people"></i>
-    Kelola Pengguna
-</a>
+    <a href="<?= base_url('admin/supplier') ?>" class="active">
+        <i class="bi bi-building"></i> Kelola Supplier
+    </a>
 
-<a href="<?= base_url('admin/supplier') ?>" class="active">
-    <i class="bi bi-building"></i>
-    Kelola Supplier
-</a>
+    <a href="<?= base_url('admin/produk') ?>">
+        <i class="bi bi-box-seam"></i> Kelola Produk
+    </a>
 
-<a href="#">
-    <i class="bi bi-box-seam"></i>
-    Kelola Produk
-</a>
-
-<a href="#">
-    <i class="bi bi-tags"></i>
-    Kategori Kapal
-</a>
-
-<a href="#">
-    <i class="bi bi-cart-check"></i>
-    Transaksi Penjualan
-</a>
+    <a href="<?= base_url('penjualan') ?>">
+        <i class="bi bi-cart-check"></i> Transaksi Penjualan
+    </a>
 
 <div style="position:absolute;bottom:20px;width:100%;">
     <a href="<?= base_url('logout') ?>" class="text-danger">

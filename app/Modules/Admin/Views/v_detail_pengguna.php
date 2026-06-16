@@ -289,13 +289,7 @@
 
         <div class="section-divider text-end">
 
-            <a href="<?= base_url('admin/pengguna') ?>"
-               class="btn btn-secondary">
-
-                <i class="bi bi-arrow-left"></i>
-                Kembali
-
-            </a>
+            
 
             <a href="<?= base_url('admin/pengguna/hapus/'.$pengguna['id']) ?>"
                class="btn btn-danger"
