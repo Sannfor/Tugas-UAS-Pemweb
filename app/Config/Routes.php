@@ -2,6 +2,7 @@
 
 use CodeIgniter\Router\RouteCollection;
 
+
 /**
  * @var RouteCollection $routes
  */
@@ -90,6 +91,10 @@ $routes->get(
     'laporan',
     '\App\Modules\Laporan\Controllers\Laporan::index'
 );
+
+
+
+$routes->get('laporan/cetak', '\App\Modules\Laporan\Controllers\Laporan::cetak');
 
 $routes->get(
     'laporan/cetak',

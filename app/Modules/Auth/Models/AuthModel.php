@@ -19,6 +19,8 @@ class AuthModel extends Model
         'npwp',
         'no_bank',
         'domisili_pelabuhan',
+        'company_name',
+        'profile_image',
         'created_at'
     ];
 

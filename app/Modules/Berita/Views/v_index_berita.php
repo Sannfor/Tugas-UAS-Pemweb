@@ -34,22 +34,24 @@
 
      <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="<?= base_url('beranda') ?>" >Beranda</a></li>
-          <li><a href="#tentangkami">Tentang Kami</a></li>
-          <li><a href="#layanan">Layanan</a></li>
-          <li><a href="#produk">Katalog</a></li>
+          <li><a href="<?= base_url('beranda') ?>">Beranda</a></li>
+          <li><a href="<?= base_url('beranda#tentangkami') ?>">Tentang Kami</a></li>
+          <li><a href="<?= base_url('beranda#layanan') ?>">Layanan</a></li>
+          <li><a href="<?= base_url('beranda#produk') ?>">Katalog</a></li>
 
           <!-- Dropdown Menu Informasi -->
           <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="<?= base_url('berita') ?>" class="active">Berita</a></li>
-              <li><a href="#laporan">Laporan</a></li>
-              <li><a href="#faq">FAQ</a></li>
+              <li>
+                <a href="<?= base_url('berita') ?>" class="active">Berita</a>
+              </li>
+              <li><a href="<?= base_url('laporan') ?>" class="active">Laporan</a></li>
+              <li><a href="<?= base_url('beranda#faq') ?>">FAQ</a></li>
             </ul>
           </li>
 
-          <li><a href="#contact">Kontak</a></li>
-          <li><a href="<?= base_url('profil') ?>" >Profil</a></li>
+          <li><a href="<?= base_url('beranda#contact') ?>">Kontak</a></li>
+          <li><a href="<?= base_url('profil') ?>">Profil</a></li>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>

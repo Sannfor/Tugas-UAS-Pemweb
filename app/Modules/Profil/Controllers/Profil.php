@@ -73,15 +73,52 @@ class Profil extends BaseController
 
         $userId = session()->get('id');
 
-        $userModel->update($userId, [
-            'npwp'              => $this->request->getPost('npwp'),
-            'no_bank'           => $this->request->getPost('no_bank'),
-            'domisili_pelabuhan'=> $this->request->getPost('domisili_pelabuhan')
-        ]);
+        $company = $this->request->getPost('company_name');
+        $npwp = $this->request->getPost('npwp');
+        $noBank = $this->request->getPost('no_bank');
+        $domisili = $this->request->getPost('domisili_pelabuhan');
+
+        $data = [
+            'company_name'       => $company,
+            'npwp'               => $npwp,
+            'no_bank'            => $noBank,
+            'domisili_pelabuhan' => $domisili
+        ];
+
+        // Upload Foto Profil
+        $file = $this->request->getFile('profile_image');
+
+        if ($file && $file->isValid() && !$file->hasMoved()) {
+
+            $newName = $file->getRandomName();
+
+            $file->move(
+                ROOTPATH . 'public/uploads/profile',
+                $newName
+            );
+
+            $data['profile_image'] = $newName;
+        }
+
+        // Otomatis menjadi supplier
+        if (
+            !empty($company) &&
+            !empty($npwp) &&
+            !empty($noBank) &&
+            !empty($domisili)
+        ) {
+            $data['role'] = 'supplier';
+
+            session()->set('role', 'supplier');
+        }
+
+        $userModel->update($userId, $data);
 
         return redirect()->back()->with(
             'success',
             'Profil berhasil diperbarui.'
         );
     }
+
+    
 }
