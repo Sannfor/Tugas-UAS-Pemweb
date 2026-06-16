@@ -267,6 +267,177 @@ class Admin extends BaseController
 
     // Placeholder agar link sidebar lain tidak error (Bisa dikembangkan nanti)
     
-    public function produk() { echo "Halaman Kelola Produk (Segera Hadir)"; }
     public function kategori() { return redirect()->to(base_url('kategori')); }
+
+    // =======================================================
+    // 1. KELOLA PRODUK (CRUD)
+    // =======================================================
+    public function produk()
+    {
+        $db = \Config\Database::connect();
+        
+        // Perhatikan penambahan nama tabel di depan kolom 'id'
+        $bulk = $db->table('bulk_carriers')
+                   ->select('bulk_carriers.id, ship_name, price, users.nama as penjual, "Bulk Carrier" as kategori, "bulk_carriers" as nama_tabel')
+                   ->join('users', 'users.id = bulk_carriers.user_id', 'left')
+                   ->get()->getResultArray();
+
+        $passenger = $db->table('passenger_ships')
+                   ->select('passenger_ships.id, ship_name, price, users.nama as penjual, "Passenger Ship" as kategori, "passenger_ships" as nama_tabel')
+                   ->join('users', 'users.id = passenger_ships.user_id', 'left')
+                   ->get()->getResultArray();
+
+        $tugboat = $db->table('tugboats')
+                   ->select('tugboats.id, ship_name, price, users.nama as penjual, "Tugboat" as kategori, "tugboats" as nama_tabel')
+                   ->join('users', 'users.id = tugboats.user_id', 'left')
+                   ->get()->getResultArray();
+
+        // Gabungkan semua kapal
+        $semua_kapal = array_merge($bulk, $passenger, $tugboat);
+
+        $data = [
+            'title'  => 'Kelola Produk - Admin',
+            'user'   => session()->get(),
+            'produk' => $semua_kapal
+        ];
+
+        return view('App\Modules\Admin\Views\v_produk', $data);
+    }
+
+    // Fungsi untuk Hapus Produk Admin
+    public function hapus_produk($tabel, $id)
+    {
+        $db = \Config\Database::connect();
+        
+        // Pastikan tabel yang diakses valid demi keamanan
+        $tabel_valid = ['bulk_carriers', 'passenger_ships', 'tugboats'];
+        if (in_array($tabel, $tabel_valid)) {
+            $db->table($tabel)->where('id', $id)->delete();
+            return redirect()->back()->with('sukses', 'Data kapal berhasil dihapus dari sistem!');
+        }
+
+        return redirect()->back()->with('error', 'Tabel tidak ditemukan!');
+    }
+
+    // Menampilkan Form Tambah Produk
+    public function tambah_produk($kategori)
+    {
+        $data = [
+            'title'    => 'Tambah Kapal - Admin',
+            'user'     => session()->get(),
+            'kategori' => $kategori,
+            'produk'   => [] // Kosong karena ini form tambah
+        ];
+        return view('App\Modules\Admin\Views\v_form_produk', $data);
+    }
+
+    // Menampilkan Form Edit Produk
+    public function edit_produk($tabel, $id)
+    {
+        $db = \Config\Database::connect();
+        
+        // Pemetaan nama tabel ke nama kategori form
+        $kategori = 'bulk-carrier';
+        if ($tabel == 'passenger_ships') $kategori = 'passenger-ship';
+        if ($tabel == 'tugboats') $kategori = 'tugboat';
+
+        $data = [
+            'title'    => 'Edit Kapal - Admin',
+            'user'     => session()->get(),
+            'kategori' => $kategori,
+            'tabel'    => $tabel,
+            'produk'   => $db->table($tabel)->where('id', $id)->get()->getRowArray()
+        ];
+        return view('App\Modules\Admin\Views\v_form_produk', $data);
+    }
+
+    // Memproses Insert / Update dari Form
+    public function simpan_produk()
+    {
+        $db       = \Config\Database::connect();
+        $kategori = $this->request->getPost('kategori');
+        $id       = $this->request->getPost('id'); // Jika ID ada, berarti Edit
+
+        // Menentukan tabel berdasarkan kategori
+        $tabel = 'bulk_carriers';
+        $folder_foto = 'bulk_carrier';
+        if ($kategori == 'passenger-ship') {
+            $tabel = 'passenger_ships';
+            $folder_foto = 'passenger';
+        } elseif ($kategori == 'tugboat') {
+            $tabel = 'tugboats';
+            $folder_foto = 'tugboat';
+        }
+
+        // Ambil semua input form secara otomatis
+        $data = $this->request->getPost();
+        
+        // Hapus variabel yang tidak ada di struktur database
+        unset($data['kategori'], $data['id']);
+
+        // Tangani Upload Foto
+        $image = $this->request->getFile('image');
+        if ($image && $image->isValid() && !$image->hasMoved()) {
+            $newName = $image->getRandomName();
+            $image->move(ROOTPATH . 'public/assets/images/' . $folder_foto . '/', $newName);
+            $data['image'] = $newName;
+        }
+
+        if (!empty($id)) {
+            // Jika ID ada, jalankan proses UPDATE
+            $db->table($tabel)->where('id', $id)->update($data);
+            $pesan = 'Data kapal berhasil diperbarui!';
+        } else {
+            // Jika tidak ada ID, jalankan proses INSERT
+            $data['user_id'] = session()->get('id'); // Catat ID admin yang menambahkan
+            $db->table($tabel)->insert($data);
+            $pesan = 'Kapal baru berhasil ditambahkan!';
+        }
+
+        return redirect()->to(base_url('admin/produk'))->with('sukses', $pesan);
+    }
+
+    public function detail_produk($tabel, $id)
+    {
+        $db = \Config\Database::connect();
+        
+        $kategori = 'Bulk Carrier';
+        if ($tabel == 'passenger_ships') $kategori = 'Passenger Ship';
+        if ($tabel == 'tugboats') $kategori = 'Tugboat';
+
+        $data = [
+            'title'    => 'Detail Kapal Admin',
+            'user'     => session()->get(),
+            'tabel'    => $tabel,
+            'kategori' => $kategori,
+            'kapal'    => $db->table($tabel)->where('id', $id)->get()->getRowArray()
+        ];
+
+        return view('App\Modules\Admin\Views\v_detail_produk_admin', $data);
+    }
+
+    // =======================================================
+    // 2. TRANSAKSI PENJUALAN (READ ONLY)
+    // =======================================================
+    public function transaksi()
+    {
+        $db = \Config\Database::connect();
+        
+        // Mengambil data transaksi dan join dengan tabel users untuk nama pembeli & penjual
+        // Asumsi kolom di tabel transactions: buyer_id, seller_id, amount/price, status, created_at
+        $transaksi = $db->table('transactions')
+                        ->select('transactions.*, pembeli.nama as nama_pembeli, penjual.nama as nama_penjual')
+                        ->join('users as pembeli', 'pembeli.id = transactions.buyer_id', 'left')
+                        ->join('users as penjual', 'penjual.id = transactions.seller_id', 'left')
+                        ->orderBy('transactions.created_at', 'DESC')
+                        ->get()->getResultArray();
+
+        $data = [
+            'title'     => 'Riwayat Transaksi - Admin',
+            'user'      => session()->get(),
+            'transaksi' => $transaksi
+        ];
+
+        return view('App\Modules\Admin\Views\v_transaksi', $data);
+    }
 }

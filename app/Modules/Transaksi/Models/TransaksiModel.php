@@ -4,7 +4,7 @@ namespace App\Modules\Transaksi\Models;
 
 use CodeIgniter\Model;
 
-class NegotiationModel extends Model
+class TransaksiModel extends Model
 {
     protected $table = 'negotiations';
     protected $primaryKey = 'id';

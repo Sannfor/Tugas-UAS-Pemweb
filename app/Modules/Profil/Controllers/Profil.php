@@ -3,7 +3,7 @@
 namespace App\Modules\Profil\Controllers;
 
 use App\Controllers\BaseController;
-use App\Modules\Transaksi\Models\NegotiationModel;
+use App\Modules\Transaksi\Models\TransaksiModel;
 use App\Modules\Auth\Models\AuthModel;
 use App\Modules\Kategori\Models\KategoriModel;
 
@@ -20,9 +20,9 @@ class Profil extends BaseController
 
     $user = $userModel->find($userId);
 
-    $negotiationModel = new NegotiationModel();
+    $TransaksiModel = new TransaksiModel();
 
-    $negotiations = $negotiationModel
+    $negotiations = $TransaksiModel
         ->where('buyer_id', $userId)
         ->orWhere('seller_id', $userId)
         ->orderBy('created_at', 'DESC')

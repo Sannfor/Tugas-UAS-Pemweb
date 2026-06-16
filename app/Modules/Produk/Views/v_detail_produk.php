@@ -71,13 +71,13 @@
                 <div class="row gy-5">
                     <div class="col-lg-7">
                         <img src="<?= base_url(
-                            isset($kapal['passengers'])
-                                ? 'assets/images/passenger/' . $kapal['image']
-                                : (isset($kapal['bollard_pull'])
-                                    ? 'assets/images/tugboat/' . $kapal['image']
-                                    : 'assets/images/bulk_carrier/' . $kapal['image'])
-                        ); ?>"
-                        class="img-fluid rounded shadow-sm w-100">
+                                        isset($kapal['passengers'])
+                                            ? 'assets/images/passenger/' . $kapal['image']
+                                            : (isset($kapal['bollard_pull'])
+                                                ? 'assets/images/tugboat/' . $kapal['image']
+                                                : 'assets/images/bulk_carrier/' . $kapal['image'])
+                                    ); ?>"
+                            class="img-fluid rounded shadow-sm w-100">
 
                         <div class="mt-4 p-4 border rounded">
 
@@ -278,6 +278,8 @@
                 </div>
 
                 <form action="<?= base_url('kapal/tawar') ?>" method="post">
+                    <?= csrf_field() ?> <!-- ✅ TAMBAHKAN INI -->
+
                     <div class="modal-body p-4">
                         <p>Anda sedang menawar kapal: <strong><?= esc($kapal['ship_name']) ?></strong></p>
                         <p class="text-muted small">Harga Asli: $<?= number_format($kapal['price'], 0, ',', '.') ?></p>

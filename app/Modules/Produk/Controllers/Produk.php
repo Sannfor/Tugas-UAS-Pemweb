@@ -65,7 +65,7 @@ class Produk extends BaseController
 
         // 1. CEK KELENGKAPAN PROFIL (users table)
         $user = $db->table('users')->where('id', $user_id)->get()->getRowArray();
-        
+
         // Jika NPWP, No Bank, atau Domisili masih kosong, lemparkan kembali ke Profil
         if (empty($user['npwp']) || empty($user['no_bank']) || empty($user['domisili_pelabuhan'])) {
             return redirect()->to(base_url('profil'))->with('error', 'Akses ditolak! Silakan isi kolom NPWP, No Rekening, dan Domisili Pelabuhan, lalu klik "Simpan Perubahan" sebelum menjual kapal.');
@@ -73,7 +73,7 @@ class Produk extends BaseController
 
         // 2. CEK STATUS SUPPLIER (supplier table)
         $supplier = $db->table('supplier')->where('user_id', $user_id)->get()->getRowArray();
-        
+
         // Jika belum ada data di tabel supplier, lemparkan ke form pendaftaran supplier
         if (!$supplier) {
             return redirect()->to(base_url('supplier/daftar'))->with('error', 'Langkah Terakhir! Anda harus melengkapi profil Perusahaan / Agen Supplier Anda terlebih dahulu.');
@@ -92,38 +92,52 @@ class Produk extends BaseController
     // 4. FUNGSI DETAIL KAPAL
     // ---------------------------------------------------------
     public function detail($id)
-        {
-            if (!session()->get('isLoggedIn')) {
-                return redirect()->to(base_url('auth/login'))
-                    ->with('error', 'Silakan login terlebih dahulu.');
-            }
+    {
+        if (!session()->get('isLoggedIn')) {
+            return redirect()->to(base_url('auth/login'))
+                ->with('error', 'Silakan login terlebih dahulu.');
+        }
 
+        // Parse prefix untuk menentukan tabel mana yang akan di-query
+        if (strpos($id, 'bulk-') === 0) {
+            // Bulk Carrier
+            $realId = str_replace('bulk-', '', $id);
+            $kapal = $this->bulkCarrierModel->find($realId);
+        } elseif (strpos($id, 'tug-') === 0) {
+            // Tugboat
+            $realId = str_replace('tug-', '', $id);
+            $kapal = $this->tugboatModel->find($realId);
+        } elseif (strpos($id, 'pass-') === 0) {
+            // Passenger Ship
+            $realId = str_replace('pass-', '', $id);
+            $kapal = $this->passengerShipModel->find($realId);
+        } else {
+            // Fallback: coba cari di semua tabel (untuk URL lama)
             $kapal = $this->bulkCarrierModel->find($id);
-
-            if (!$kapal) {
-                $kapal = $this->passengerShipModel->find($id);
-            }
-
             if (!$kapal) {
                 $kapal = $this->tugboatModel->find($id);
             }
-
             if (!$kapal) {
-                throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(
-                    'Data kapal tidak ditemukan'
-                );
+                $kapal = $this->passengerShipModel->find($id);
             }
+        }
 
-            $data = [
-                'title' => 'Detail ' . $kapal['ship_name'],
-                'kapal' => $kapal
-            ];
-
-            return view(
-                'App\Modules\Produk\Views\v_detail_produk',
-                $data
+        if (!$kapal) {
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound(
+                'Data kapal tidak ditemukan'
             );
         }
+
+        $data = [
+            'title' => 'Detail ' . $kapal['ship_name'],
+            'kapal' => $kapal
+        ];
+
+        return view(
+            'App\Modules\Produk\Views\v_detail_produk',
+            $data
+        );
+    }
 
     // ---------------------------------------------------------
     // 5. FUNGSI HAPUS 
@@ -131,7 +145,7 @@ class Produk extends BaseController
     public function hapus($id)
     {
         $kapal = $this->bulkCarrierModel->find($id);
-        $user_aktif = session()->get('user_data'); 
+        $user_aktif = session()->get('user_data');
 
         if (!$kapal) {
             return redirect()->back()->with('error', 'Data kapal tidak ditemukan.');
@@ -158,7 +172,7 @@ class Produk extends BaseController
         $ship_id = $this->request->getPost('ship_id');
         $harga_tawaran = $this->request->getPost('offer_price');
         $kapal = $this->bulkCarrierModel->find($ship_id);
-        
+
         $harga_asli = $kapal['price'];
         $batas_minimal_tawaran = $harga_asli - ($harga_asli * 0.10);
         $persentase_turun = (($harga_asli - $harga_tawaran) / $harga_asli) * 100;
