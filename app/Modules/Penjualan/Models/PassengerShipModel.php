@@ -13,6 +13,8 @@ class PassengerShipModel extends Model
     protected $useAutoIncrement = true;
 
     protected $allowedFields = [
+        'user_id',
+
         'ship_name',
         'ship_type',
         'class',

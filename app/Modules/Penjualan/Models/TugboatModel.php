@@ -12,6 +12,8 @@ class TugboatModel extends Model
     protected $returnType = 'array';
 
     protected $allowedFields = [
+         'user_id',
+
         'ship_name',
         'price',
         'ship_type',

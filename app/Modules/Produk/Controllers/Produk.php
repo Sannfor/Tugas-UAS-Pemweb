@@ -173,6 +173,19 @@ class Produk extends BaseController
         $harga_tawaran = $this->request->getPost('offer_price');
         $kapal = $this->bulkCarrierModel->find($ship_id);
 
+        if (!$kapal) {
+            $kapal = $this->tugboatModel->find($ship_id);
+        }
+
+        if (!$kapal) {
+            $kapal = $this->passengerShipModel->find($ship_id);
+        }
+
+        if (!$kapal) {
+            return redirect()->back()
+                ->with('error', 'Data kapal tidak ditemukan');
+        }
+
         $harga_asli = $kapal['price'];
         $batas_minimal_tawaran = $harga_asli - ($harga_asli * 0.10);
         $persentase_turun = (($harga_asli - $harga_tawaran) / $harga_asli) * 100;
@@ -201,21 +214,46 @@ class Produk extends BaseController
         }
 
         if ($cek_nego) {
-            $builder->where('id', $cek_nego['id'])->update([
-                'offer_price' => $harga_tawaran,
-                'attempt_count' => $cek_nego['attempt_count'] + 1,
-                'status' => $status_tawaran
-            ]);
-        } else {
-            $builder->insert([
-                'ship_id' => $ship_id,
-                'buyer_id' => $buyer_id,
-                'seller_id' => $kapal['user_id'],
-                'offer_price' => $harga_tawaran,
-                'attempt_count' => 1,
-                'status' => $status_tawaran
+
+        $builder->where('id', $cek_nego['id'])->update([
+            'offer_price'   => $harga_tawaran,
+            'attempt_count' => $cek_nego['attempt_count'] + 1,
+            'status'        => $status_tawaran
+        ]);
+
+        $negotiationId = $cek_nego['id'];
+
+    } else {
+
+        $builder->insert([
+            'ship_id'       => $ship_id,
+            'buyer_id'      => $buyer_id,
+            'seller_id'     => $kapal['user_id'],
+            'offer_price'   => $harga_tawaran,
+            'attempt_count' => 1,
+            'status'        => $status_tawaran
+        ]);
+
+        $negotiationId = $db->insertID();
+    }
+        if ($status_tawaran == 'accepted') {
+
+        $cekTransaksi = $db->table('transactions')
+            ->where('negotiation_id', $negotiationId)
+            ->countAllResults();
+
+        if ($cekTransaksi == 0) {
+
+            $db->table('transactions')->insert([
+                'negotiation_id'    => $negotiationId,
+                'buyer_id'          => $buyer_id,
+                'seller_id'         => $kapal['user_id'],
+                'ship_id'           => $ship_id,
+                'transaction_price' => $harga_tawaran,
+                'status'            => 'completed'
             ]);
         }
+    }
 
         return redirect()->back()->with($status_tawaran === 'rejected' ? 'error' : 'sukses', $pesan_reaksi);
     }

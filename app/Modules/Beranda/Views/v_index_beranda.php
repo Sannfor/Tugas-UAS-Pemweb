@@ -93,14 +93,14 @@
           <li><a href="#contact">Kontak</a></li>
 
           <?php if (session()->get('isLoggedIn')): ?>
-            <li><a href="<?= base_url('profil') ?>" class="btn-getstarted text-white" style="background-color: #0d6efd; padding: 8px 20px; border-radius: 20px; margin-left: 15px;">Profil Saya</a></li>
+            <li><a href="<?= base_url('profil') ?>" class="btn-getstarted text-white" style="background-color: #0d6efd; padding: 8px 20px; border-radius: 20px; margin-left: 15px;">Profil Saya ></a></li>
           <?php else: ?>
             <li><a href="<?= base_url('auth/login') ?>" class="btn-getstarted text-white" style="background-color: #198754; padding: 8px 20px; border-radius: 20px; margin-left: 15px;">Login</a></li>
           <?php endif; ?>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>><!-- .navmenu -->
+      </nav>
     </div>
   </header>
 

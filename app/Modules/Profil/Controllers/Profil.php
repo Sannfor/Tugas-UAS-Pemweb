@@ -11,13 +11,13 @@ use App\Modules\Kategori\Models\KategoriModel;
 class Profil extends BaseController
 {
    public function index()
-{
+    {
     $session = session();
 
+    
     $userId = $session->get('id');
 
     $userModel = new AuthModel();
-
     $user = $userModel->find($userId);
 
     $TransaksiModel = new TransaksiModel();
@@ -28,15 +28,67 @@ class Profil extends BaseController
         ->orderBy('created_at', 'DESC')
         ->findAll();
 
-    $data['user'] = $user;
-    $data['negotiations'] = $negotiations;
+    $db = \Config\Database::connect();
+
+    foreach ($negotiations as &$nego) {
+
+        $nego['nama_kapal'] = 'Kapal Tidak Ditemukan';
+        $nego['kategori'] = '-';
+
+        $kapal = $db->table('bulk_carriers')
+            ->where('id', $nego['ship_id'])
+            ->get()
+            ->getRowArray();
+
+        if ($kapal) {
+
+            $nego['nama_kapal'] = $kapal['ship_name'] ?? '-';
+            $nego['kategori'] = 'Bulk Carrier';
+
+        } else {
+
+            $kapal = $db->table('tugboats')
+                ->where('id', $nego['ship_id'])
+                ->get()
+                ->getRowArray();
+
+            if ($kapal) {
+
+                $nego['nama_kapal'] = $kapal['ship_name'] ?? '-';
+                $nego['kategori'] = 'Tugboat';
+
+            } else {
+
+                $kapal = $db->table('passenger_ships')
+                    ->where('id', $nego['ship_id'])
+                    ->get()
+                    ->getRowArray();
+
+                if ($kapal) {
+
+                    $nego['nama_kapal'] = $kapal['ship_name'] ?? '-';
+                    $nego['kategori'] = 'Passenger Ship';
+                }
+            }
+        }
+    }
 
     $kategoriModel = new KategoriModel();
 
-    $data['kategori'] = $kategoriModel->findAll();
+    $data = [
+        'user' => $user,
+        'negotiations' => $negotiations,
+        'kategori' => $kategoriModel->findAll()
+    ];
 
-    return view('App\Modules\Profil\Views\v_index_profil', $data);
-}
+    return view(
+        'App\Modules\Profil\Views\v_index_profil',
+        $data
+    );
+
+
+    }
+
 
     public function transaksi()
     {

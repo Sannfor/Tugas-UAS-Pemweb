@@ -103,6 +103,8 @@ class Penjualan extends BaseController
         $data['propulsion_type'] = $this->request->getPost('propulsion_type');
 
         $model = new TugboatModel();
+
+      
     }
     $image = $this->request->getFile('image');
 
@@ -128,8 +130,8 @@ class Penjualan extends BaseController
 
     $model->insert($data);
 
-    return redirect()->to('profil')
-        ->with('success', 'Kapal berhasil dipublikasikan.');
+       return redirect()->to('profil')
+    ->with('success', 'Kapal berhasil dipublikasikan.');
      
 
     }

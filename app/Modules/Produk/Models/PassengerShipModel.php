@@ -11,7 +11,7 @@ class PassengerShipModel extends Model
     protected $returnType       = 'array';
     
     protected $allowedFields    = [
-        'ship_name', 'ship_type', 'class', 'built_place', 'navigation_area', 
+        'user_id','ship_name', 'ship_type', 'class', 'built_place', 'navigation_area', 
         'flag', 'built_date', 'loa', 'breadth', 'depth', 'draft', 'gt', 'nt', 
         'passengers', 'me_brand', 'main_engine_model', 'me_power', 'rpm', 
         'speed', 'aux_engine_brand', 'aux_engine_no', 'aux_engine_power', 

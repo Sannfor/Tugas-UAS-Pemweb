@@ -96,7 +96,7 @@ $is_logged_in = session()->get('isLoggedIn');
               </ul>
               
               <?php $link = $is_logged_in ? base_url('kapal/detail/tug-' . $kapal['id']) : base_url('auth/login'); ?>
-              <a href="<?= $link ?>" class="buy-btn" style="background-color: #ff9800; border-color: #ff9800;">Lihat Detail</a>
+              <a href="<?= $link ?>" class="buy-btn">Lihat Detail</a>
               
             </div>
           </div>
@@ -122,7 +122,7 @@ $is_logged_in = session()->get('isLoggedIn');
               </ul>
               
               <?php $link = $is_logged_in ? base_url('kapal/detail/pass-' . $kapal['id']) : base_url('auth/login'); ?>
-              <a href="<?= $link ?>" class="buy-btn" style="background-color: #28a745; border-color: #28a745;">Lihat Detail</a>
+              <a href="<?= $link ?>" class="buy-btn">Lihat Detail</a>
               
             </div> </div> <?php endforeach; ?>
       <?php endif; ?>

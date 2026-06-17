@@ -13,6 +13,7 @@ class BulkCarrierModel extends Model
 
     protected $allowedFields = [
         'user_id',
+        
         'ship_name',
         'ship_type',
         'class',

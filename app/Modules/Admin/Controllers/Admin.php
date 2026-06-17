@@ -43,14 +43,15 @@ class Admin extends BaseController
             ->countAllResults();
 
         // Top Buyer
-        $top_buyers = $db->query("
+       $top_buyers = $db->query("
             SELECT
                 u.nama,
-                COUNT(t.id) AS total_transaksi
-            FROM transactions t
+                COUNT(n.id) AS total_transaksi
+            FROM negotiations n
             JOIN users u
-                ON u.id = t.buyer_id
-            GROUP BY t.buyer_id
+                ON u.id = n.buyer_id
+            WHERE n.status = 'accepted'
+            GROUP BY n.buyer_id
             ORDER BY total_transaksi DESC
             LIMIT 5
         ")->getResultArray();

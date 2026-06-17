@@ -302,8 +302,8 @@
                                                 <tr>
                                                     <td><?= $no++ ?></td>
                                                     <td><?= date('d M Y', strtotime($row['created_at'])) ?></td>
-                                                    <td>Kapal #<?= esc($row['ship_id']) ?></td>
-                                                    <td>-</td>
+                                                    <td> <?= esc($row['nama_kapal'] ?? '-') ?> </td>
+                                                    <td> <?= esc($row['kategori'] ?? '-') ?> </td>
                                                     <td>
                                                         <?php if ($row['buyer_id'] == session()->get('id')) : ?>
                                                             <span class="badge bg-success">Pembelian</span>
