@@ -28,7 +28,7 @@ $routes->group('auth', ['namespace' => 'App\Modules\Auth\Controllers'], function
 });
 
 // --------------------------------------------------------------------
-// 3. MODUL ADMIN DASHBOARD (SUDAH DIGABUNG & DILENGKAPI)
+// 3. MODUL ADMIN DASHBOARD
 // --------------------------------------------------------------------
 $routes->group('admin', ['namespace' => 'App\Modules\Admin\Controllers'], function($routes) {
     $routes->get('/', 'Admin::index');
@@ -49,14 +49,8 @@ $routes->group('admin', ['namespace' => 'App\Modules\Admin\Controllers'], functi
     $routes->get('produk/edit/(:any)/(:num)', 'Admin::edit_produk/$1/$2');
     $routes->post('produk/simpan', 'Admin::simpan_produk');
     $routes->get('produk/hapus/(:any)/(:num)', 'Admin::hapus_produk/$1/$2');
-    
-    // RUTE BARU: Detail Produk Admin
     $routes->get('produk/detail/(:any)/(:num)', 'Admin::detail_produk/$1/$2');
-
-    // TAMBAHAN BARU: Transaksi Penjualan (Read-Only)
-    $routes->get('transaksi', 'Admin::transaksi');
 });
-
 
 // --------------------------------------------------------------------
 // 4. MODUL PROFIL & USER
@@ -86,7 +80,6 @@ $routes->group('produk', ['namespace' => 'App\Modules\Produk\Controllers'], func
     $routes->get('form_jual', 'Produk::form_jual');
     $routes->get('form_jualparent/(:segment)', 'Produk::form_jual/$1');
     
-    // Kompatibilitas rute lama kamu jika diakses langsung
     $routes->get('jual', 'Produk::form_jual');
     $routes->get('jual/(:segment)', 'Produk::form_jual/$1');
 });
@@ -110,7 +103,7 @@ $routes->group('kategori', ['namespace' => 'App\Modules\Kategori\Controllers'], 
 });
 
 // --------------------------------------------------------------------
-// 8. MODUL PENJUALAN / TRANSAKSI (SISI SUPPLIER)
+// 8. MODUL PENJUALAN (SISI SUPPLIER)
 // --------------------------------------------------------------------
 $routes->group('penjualan', ['namespace' => 'App\Modules\Penjualan\Controllers'], function($routes){
     $routes->get('/', 'Penjualan::index');
@@ -119,7 +112,14 @@ $routes->group('penjualan', ['namespace' => 'App\Modules\Penjualan\Controllers']
 });
 
 // --------------------------------------------------------------------
-// 9. MODUL INFORMASI (BERITA, LAPORAN, KONTAK)
+// 9. MODUL DETAIL PENJUALAN (TRANSAKSI ADMIN)
+// --------------------------------------------------------------------
+$routes->group('detailpenjualan', ['namespace' => 'App\Modules\DetailPenjualan\Controllers'], function($routes){
+    $routes->get('/', 'DetailPenjualan::index');
+});
+
+// --------------------------------------------------------------------
+// 10. MODUL INFORMASI (BERITA, LAPORAN, KONTAK)
 // --------------------------------------------------------------------
 $routes->group('berita', ['namespace' => 'App\Modules\Berita\Controllers'], function($routes){
     $routes->get('/', 'Berita::index');
@@ -133,10 +133,4 @@ $routes->group('laporan', ['namespace' => 'App\Modules\Laporan\Controllers'], fu
 
 $routes->group('kontak', ['namespace' => 'App\Modules\Kontak\Controllers'], function($routes){
     $routes->post('kirim', 'Kontak::kirim');
-});
-
-$routes->group('detailpenjualan', ['namespace' => 'App\Modules\DetailPenjualan\Controllers'], function($routes){
-
-    $routes->get('/', 'DetailPenjualan::index');
-
 });

@@ -65,7 +65,7 @@
         <i class="bi bi-box-seam"></i> Kelola Produk
     </a>
 
-    <a href="<?= base_url('penjualan') ?>">
+    <a href="<?= base_url('detailpenjualan') ?>">
         <i class="bi bi-cart-check"></i> Transaksi Penjualan
     </a>
 

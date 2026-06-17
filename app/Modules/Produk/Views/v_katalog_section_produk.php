@@ -4,6 +4,9 @@
  * @var array $kapal_tugboat
  * @var array $kapal_passenger
  */
+
+// CEK STATUS LOGIN PENGUNJUNG
+$is_logged_in = session()->get('isLoggedIn');
 ?>
 <section id="produk" class="pricing section">
 
@@ -65,7 +68,10 @@
                 <li><i class="bi bi-speedometer2"></i> <span><strong>DWT:</strong> <?= esc($kapal['dwt']); ?> T</span></li>
                 <li><i class="bi bi-gear"></i> <span><strong>Mesin:</strong> <?= esc($kapal['me_brand']); ?></span></li>
               </ul>
-              <a href="<?= base_url('kapal/detail/bulk-' . $kapal['id']) ?>" class="buy-btn">Lihat Detail</a>
+              
+              <?php $link = $is_logged_in ? base_url('kapal/detail/bulk-' . $kapal['id']) : base_url('auth/login'); ?>
+              <a href="<?= $link ?>" class="buy-btn">Lihat Detail</a>
+              
             </div>
           </div>
         <?php endforeach; ?>
@@ -74,27 +80,34 @@
       <?php if (!empty($kapal_tugboat)) : ?>
         <?php foreach ($kapal_tugboat as $kapal) : ?>
           <div class="col-lg-4 catalog-item kategori-tugboat" data-aos="zoom-in">
-            <div class="pricing-item" style="border-top-color: #ff9800;"> <div class="text-center mb-3">
+            <div class="pricing-item" style="border-top-color: #ff9800;"> 
+              <div class="text-center mb-3">
                 <img src="<?= base_url('assets/images/tugboat/' . ($kapal['image'] ?? 'default.jpg')); ?>"
                   class="img-fluid rounded"
                   alt="<?= esc($kapal['ship_name']); ?>"
                   style="height: 250px; width: 100%; object-fit: cover;">
               </div>
               <h3><?= esc($kapal['ship_name']); ?></h3>
-              <h4><sup>$</sup><?= number_format($kapal['price'], 0, ',', '.'); ?></h4> <ul>
+              <h4><sup>$</sup><?= number_format($kapal['price'], 0, ',', '.'); ?></h4> 
+              <ul>
                 <li><i class="bi bi-geo-alt"></i> <span><strong>Bendera:</strong> <?= esc($kapal['flag']); ?></span></li>
                 <li><i class="bi bi-speedometer2"></i> <span><strong>Bollard Pull:</strong> <?= esc($kapal['bollard_pull']); ?> T</span></li>
                 <li><i class="bi bi-gear"></i> <span><strong>Power:</strong> <?= esc($kapal['me_power']); ?> kW</span></li>
               </ul>
-              <a href="<?= base_url('kapal/detail/tug-' . $kapal['id']) ?>" class="buy-btn" style="background-color: #ff9800; border-color: #ff9800;">Lihat Detail</a>
+              
+              <?php $link = $is_logged_in ? base_url('kapal/detail/tug-' . $kapal['id']) : base_url('auth/login'); ?>
+              <a href="<?= $link ?>" class="buy-btn" style="background-color: #ff9800; border-color: #ff9800;">Lihat Detail</a>
+              
             </div>
           </div>
         <?php endforeach; ?>
       <?php endif; ?>
+      
       <?php if (!empty($kapal_passenger)) : ?>
         <?php foreach ($kapal_passenger as $kapal) : ?>
           <div class="col-lg-4 catalog-item kategori-passenger" data-aos="zoom-in">
-            <div class="pricing-item" style="border-top-color: #28a745;"> <div class="text-center mb-3">
+            <div class="pricing-item" style="border-top-color: #28a745;"> 
+              <div class="text-center mb-3">
                <img src="<?= base_url('assets/images/passenger/' . ($kapal['image'] ?? 'default.jpg')); ?>"
                   class="img-fluid rounded"
                   alt="<?= esc($kapal['ship_name']); ?>"
@@ -107,9 +120,11 @@
                 <li><i class="bi bi-people"></i> <span><strong>Kapasitas:</strong> <?= esc($kapal['passengers']); ?> Penumpang</span></li>
                 <li><i class="bi bi-gear"></i> <span><strong>Mesin:</strong> <?= esc($kapal['me_brand']); ?></span></li>
               </ul>
-              <a href="<?= base_url('kapal/detail/pass-' . $kapal['id']) ?>" class="buy-btn" style="background-color: #28a745; border-color: #28a745;">Lihat Detail</a>
-          </div>
-        <?php endforeach; ?>
+              
+              <?php $link = $is_logged_in ? base_url('kapal/detail/pass-' . $kapal['id']) : base_url('auth/login'); ?>
+              <a href="<?= $link ?>" class="buy-btn" style="background-color: #28a745; border-color: #28a745;">Lihat Detail</a>
+              
+            </div> </div> <?php endforeach; ?>
       <?php endif; ?>
 
       <?php if (empty($kapal_bulk) && empty($kapal_tugboat) && empty($kapal_passenger)) : ?>
@@ -154,13 +169,11 @@
       btn.addEventListener('click', function(e) {
         e.preventDefault();
         
-        // Hapus class active dari semua tombol, berikan ke tombol yang diklik
         filterBtns.forEach(b => b.classList.remove('active'));
         this.classList.add('active');
 
         const filterValue = this.getAttribute('data-filter');
 
-        // Sembunyikan atau tampilkan item sesuai filter
         catalogItems.forEach(item => {
           if (filterValue === 'all') {
             item.style.display = 'block';

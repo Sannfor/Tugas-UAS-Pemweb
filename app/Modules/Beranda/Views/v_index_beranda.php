@@ -80,7 +80,6 @@
           <li><a href="#layanan">Layanan</a></li>
           <li><a href="#produk">Katalog</a></li>
 
-          <!-- Dropdown Menu Informasi -->
           <li class="dropdown"><a href="#"><span>Informasi</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li>
@@ -92,11 +91,16 @@
           </li>
 
           <li><a href="#contact">Kontak</a></li>
-          <li><a href="<?= base_url('profil') ?>">Profil</a></li>
+
+          <?php if (session()->get('isLoggedIn')): ?>
+            <li><a href="<?= base_url('profil') ?>" class="btn-getstarted text-white" style="background-color: #0d6efd; padding: 8px 20px; border-radius: 20px; margin-left: 15px;">Profil Saya</a></li>
+          <?php else: ?>
+            <li><a href="<?= base_url('auth/login') ?>" class="btn-getstarted text-white" style="background-color: #198754; padding: 8px 20px; border-radius: 20px; margin-left: 15px;">Login</a></li>
+          <?php endif; ?>
 
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+      </nav>><!-- .navmenu -->
     </div>
   </header>
 
@@ -735,15 +739,16 @@
           </div>
         </div>
 
-        <!-- Kolom 2: Tautan Menu Navbar (Sudah Disesuaikan dengan ID terbaru) -->
         <div class="col-lg-2 col-6 footer-links">
           <h4>Tautan Berguna</h4>
           <ul>
             <li><a href="#hero">Beranda</a></li>
             <li><a href="#tentangkami">Tentang Kami</a></li>
             <li><a href="#produk">Katalog</a></li>
-            <li><a href="#berita">Berita</a></li>
-            <li><a href="#laporan">Laporan</a></li>
+            
+            <li><a href="<?= base_url('berita') ?>">Berita</a></li>
+            <li><a href="<?= base_url('laporan') ?>">Laporan</a></li>
+            
             <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>

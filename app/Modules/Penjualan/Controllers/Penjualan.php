@@ -134,36 +134,4 @@ class Penjualan extends BaseController
 
     }
 
-
-    /**
-     * Detail penjualan
-     */
-    public function detail($id)
-    {
-        $data = [
-            'title' => 'Detail Penjualan',
-            'id'    => $id
-        ];
-
-        return view(
-            'App\Modules\Penjualan\Views\v_detail_penjualan',
-            $data
-        );
-    }
-
-    /**
-     * Hapus penjualan
-     */
-    public function hapus($id)
-    {
-        /*
-        Nanti:
-        $model->delete($id);
-        */
-
-        return redirect()->back()->with(
-            'success',
-            'Data penjualan berhasil dihapus.'
-        );
-    }
 }
